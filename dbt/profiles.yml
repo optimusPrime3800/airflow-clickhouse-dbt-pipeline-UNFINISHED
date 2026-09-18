@@ -1,0 +1,15 @@
+# куда dbt подключаться и под каким пользователем.
+
+analytics:
+  target: dev
+
+  outputs:
+    dev:
+      type: clickhouse
+      schema: raw
+      host: clickhouse
+      port: 9000
+      user: dbt
+      password: dbt_password
+      secure: false
+      threads: 4

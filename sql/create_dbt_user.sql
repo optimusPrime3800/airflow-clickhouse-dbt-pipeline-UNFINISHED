@@ -1,0 +1,4 @@
+CREATE USER IF NOT EXISTS dbt
+IDENTIFIED WITH plaintext_password BY 'dbt_password';
+
+GRANT SELECT, INSERT, ALTER, CREATE, DROP ON raw.* TO dbt;

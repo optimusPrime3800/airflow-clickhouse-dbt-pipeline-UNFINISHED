@@ -1,0 +1,90 @@
+
+services: 
+    postgres:
+      image: postgres:16
+      environment:
+        POSTGRES_USER: 0tears
+        POSTGRES_PASSWORD: 0tears
+        POSTGRES_DB: 0tears
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+      healthcheck:
+        test: ["CMD-SHELL", "pg_isready -U 0tears -d 0tears"]
+        interval: 5s
+        timeout: 5s
+        retries: 5     
+    
+    airflow:
+      build: .
+  
+      depends_on: 
+         postgres:
+            condition: service_healthy
+      ports:
+        - "8080:8080"
+      volumes:
+        - ./dags:/opt/airflow/dags
+        - ./dbt:/opt/airflow/dbt
+        - ./data:/opt/airflow/data
+        - ./scripts:/opt/airflow/scripts
+      environment:
+        AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://0tears:0tears@postgres:5432/0tears
+        AIRFLOW__CORE__EXECUTOR: LocalExecutor
+        AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_USERS:  "admin:admin, developer:op"
+      command: >
+        bash -c "
+          airflow db migrate &&
+          airflow users create \
+          --username admin \
+          --password admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email email@gmail.com || true &&
+          airflow standalone
+        "
+    clickhouse:
+      image: clickhouse/clickhouse-server:25.8
+
+      ports: 
+        - "8123:8123"
+        - "9000:9000"
+
+      volumes:
+        - clickhouse_data:/var/lib/clickhouse
+        - ./data:/var/lib/clickhouse/user_files
+
+      restart: unless-stopped
+
+    superset:
+        build:
+            context: .
+            dockerfile: Dockerfile.superset
+        ports:
+          - "8088:8088"
+        environment:
+          SUPERSET_SECRET_KEY: "my-super-secret-key"
+        volumes:
+          - superset_data:/app/superset_home
+        depends_on:
+          - clickhouse
+        command: >
+          bash -c "
+            superset db upgrade &&
+            superset fab create-admin
+              --username admin
+              --firstname Admin
+              --lastname User
+              --email admin@example.com
+              --password admin || true &&
+            superset init &&
+            superset run -h 0.0.0.0 -p 8088
+          "
+
+volumes:
+    postgres_data:
+    clickhouse_data:
+    superset_data:
+
+    
+  

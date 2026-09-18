@@ -1,0 +1,9 @@
+pandas
+numpy
+faker
+clickhouse-connect
+psycopg2-binary
+pyarrow
+dbt-core
+dbt-clickhouse
+

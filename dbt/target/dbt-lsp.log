@@ -1,0 +1,1340 @@
+==================== 2026-08-25T15:11:02.097975Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-08-25T15:11:02.106851Z | 4506f588-9eaf-42a7-a24a-630c311c0f2a ====================
+15:11:02.107637 [info ]: Starting dbt LSP server
+15:11:02.109025 [info ]: Connecting to LSP client on port 8000
+15:11:02.114402 [info ]: Successfully connected to LSP client
+15:11:02.114692 [info ]: Creating LSP service...
+15:11:02.127764 [info ]: Creating LSP server...
+15:11:02.127790 [info ]: Starting LSP server...
+15:11:02.205533 [info ]: Loading profiles.yml
+15:11:02.294946 [info ]: Started loading project
+15:11:02.306323 [info ]: Loading profiles.yml
+15:11:02.332769 [debug]:    Started loading packages
+15:11:02.340368 [debug]:     Loaded [  0.01s] packages
+15:11:02.349393 [info ]: Finished loading project [  0.05s]
+15:11:02.356809 [info ]: Started parsing
+15:11:02.472287 [debug]: Finished parsing models/staging/stg_orders.sql [  0.02s]
+15:11:02.662924 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:11:02.669312 [info ]: Cached model count updated: 1 models (estimate)
+15:11:02.669342 [info ]: Cached model count updated: 1 models (accurate)
+15:11:02.671292 [info ]: Started scheduling
+15:11:02.676077 [info ]: Finished scheduling [  0.00s]
+15:11:02.676129 [debug]: Compilation - 0 nodes selected: {}
+15:11:02.677516 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+fqn:model.analytics.stg_orders' does not match any enabled nodes
+15:11:02.677757 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:11:02.677990 [info ]: Started scheduling
+15:11:02.678563 [info ]: Finished scheduling [  0.00s]
+15:11:02.698911 [debug]: No platform credentials found, skipping remote license
+15:11:04.335848 [debug]: Requesting trial license from https://cloud.getdbt.com/api/private/trial-licenses/
+15:11:04.874154 [warn ]: [LicenseError (dbt1068)]: Error loading license from trial license server, skipping: Remote license fetch failed: HTTP 406 Not Acceptable
+15:11:05.071513 [debug]: Requesting trial license from https://cloud.getdbt.com/api/private/trial-licenses/
+15:11:05.512918 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:05.523606 [info ]: Started building task graph
+15:11:05.526283 [info ]: Finished building task graph [  0.00s]
+15:11:05.594365 [info ]: Started scheduling
+15:11:05.594415 [info ]: Finished scheduling [  0.00s]
+15:11:05.597290 [info ]: Finished parsing [  3.24s]
+15:11:05.598527 [info ]: Cached model count updated: 1 models (accurate)
+15:11:05.655731 [info ]: Started loading project
+15:11:05.656663 [info ]: Loading profiles.yml
+15:11:05.694760 [info ]: Cached model count updated: 1 models (estimate)
+15:11:05.694790 [info ]: Cached model count updated: 1 models (accurate)
+15:11:05.694815 [info ]: Started scheduling
+15:11:05.694850 [info ]: Finished scheduling [  0.00s]
+15:11:05.694866 [debug]: Compilation - 0 nodes selected: {}
+15:11:05.694893 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+fqn:model.analytics.stg_orders' does not match any enabled nodes
+15:11:05.694906 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:11:05.697624 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:05.697975 [info ]: Started building task graph
+15:11:05.698004 [info ]: Finished building task graph [  0.00s]
+15:11:05.704174 [info ]: Started scheduling
+15:11:05.704236 [info ]: Finished scheduling [  0.00s]
+15:11:05.704989 [info ]: Finished loading project [  0.05s]
+15:11:05.705005 [info ]: Cached model count updated: 1 models (accurate)
+15:11:05.966021 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:07.262007 [info ]: Started loading project
+15:11:07.262654 [info ]: Loading profiles.yml
+15:11:07.289968 [info ]: Cached model count updated: 1 models (estimate)
+15:11:07.289989 [info ]: Cached model count updated: 1 models (accurate)
+15:11:07.290007 [info ]: Started scheduling
+15:11:07.290033 [info ]: Finished scheduling [  0.00s]
+15:11:07.290044 [debug]: Compilation - 0 nodes selected: {}
+15:11:07.290057 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:11:07.291178 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:07.291424 [info ]: Started building task graph
+15:11:07.291443 [info ]: Finished building task graph [  0.00s]
+15:11:07.296439 [info ]: Started scheduling
+15:11:07.296477 [info ]: Finished scheduling [  0.00s]
+15:11:07.296559 [info ]: Finished loading project [  0.03s]
+15:11:07.296580 [info ]: Cached model count updated: 1 models (accurate)
+15:11:07.567428 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:10.299875 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:50.815715 [info ]: Started loading project
+15:11:50.816348 [info ]: Loading profiles.yml
+15:11:50.830004 [info ]: Started parsing
+15:11:50.884153 [info ]: Finished loading project [  0.07s]
+15:11:50.886953 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+15:11:51.033489 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:11:51.038580 [info ]: Cached model count updated: 1 models (estimate)
+15:11:51.038606 [info ]: Cached model count updated: 1 models (accurate)
+15:11:51.038629 [info ]: Started scheduling
+15:11:51.039346 [info ]: Finished scheduling [  0.00s]
+15:11:51.039378 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_orders"}
+15:11:51.040659 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:51.044498 [info ]: Started building task graph
+15:11:51.046940 [info ]: Finished building task graph [  0.00s]
+15:11:51.051675 [info ]: Started rendering (1 nodes)
+15:11:51.053853 [info ]: Started model raw.stg_orders
+15:11:51.054704 [debug]: Started rendering model raw.stg_orders
+15:11:51.055383 [info ]: Finished parsing [  0.23s]
+15:11:51.074232 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:11:51.078193 [debug]: Finished rendering [  0.02s] model raw.stg_orders [success]
+15:11:51.078239 [info ]: Finished rendering [  0.03s] (1 nodes, 0 skipped, 0 errors)
+15:11:51.078252 [info ]:  Succeeded [  0.02s] model raw.stg_orders (view)
+15:11:51.083873 [info ]: Started scheduling
+15:11:51.083935 [info ]: Finished scheduling [  0.00s]
+15:11:51.086389 [info ]: Cached model count updated: 1 models (accurate)
+15:11:51.212198 [info ]: Started loading project
+15:11:51.212752 [info ]: Loading profiles.yml
+15:11:51.220871 [info ]: Started parsing
+15:11:51.274832 [info ]: Finished loading project [  0.06s]
+15:11:51.276782 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+15:11:51.435052 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:11:51.437680 [info ]: Cached model count updated: 1 models (estimate)
+15:11:51.437698 [info ]: Cached model count updated: 1 models (accurate)
+15:11:51.437715 [info ]: Started scheduling
+15:11:51.437756 [info ]: Finished scheduling [  0.00s]
+15:11:51.437771 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_orders"}
+15:11:51.438659 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:51.438939 [info ]: Started building task graph
+15:11:51.438970 [info ]: Finished building task graph [  0.00s]
+15:11:51.440563 [info ]: Started rendering (1 nodes)
+15:11:51.440596 [info ]: Started model raw.stg_orders
+15:11:51.440605 [debug]: Started rendering model raw.stg_orders
+15:11:51.440660 [info ]: Finished parsing [  0.22s]
+15:11:51.442320 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:11:51.442520 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:11:51.442546 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:11:51.442558 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+15:11:51.447863 [info ]: Started scheduling
+15:11:51.447923 [info ]: Finished scheduling [  0.00s]
+15:11:51.449898 [info ]: Cached model count updated: 1 models (accurate)
+15:11:51.708221 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:53.008048 [info ]: Started loading project
+15:11:53.009469 [info ]: Loading profiles.yml
+15:11:53.075641 [info ]: Cached model count updated: 1 models (estimate)
+15:11:53.075670 [info ]: Cached model count updated: 1 models (accurate)
+15:11:53.075702 [info ]: Started scheduling
+15:11:53.075839 [info ]: Finished scheduling [  0.00s]
+15:11:53.075868 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_orders"}
+15:11:53.079252 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:53.079813 [info ]: Started building task graph
+15:11:53.079878 [info ]: Finished building task graph [  0.00s]
+15:11:53.082866 [info ]: Started rendering (1 nodes)
+15:11:53.082973 [info ]: Started model raw.stg_orders
+15:11:53.083315 [debug]: Started rendering model raw.stg_orders
+15:11:53.083501 [info ]: Finished loading project [  0.08s]
+15:11:53.086123 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:11:53.086870 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:11:53.086906 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:11:53.086920 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+15:11:53.096170 [info ]: Started scheduling
+15:11:53.096234 [info ]: Finished scheduling [  0.00s]
+15:11:53.096472 [info ]: Cached model count updated: 1 models (accurate)
+15:11:53.354668 [debug]: License check failed: Feature not licensed: 'lineage'
+15:11:59.797007 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:20.920210 [info ]: Started loading project
+15:40:20.921121 [info ]: Loading profiles.yml
+15:40:20.932649 [info ]: Started loading project
+15:40:20.933299 [info ]: Loading profiles.yml
+15:40:20.933338 [info ]: Finished loading project [  0.01s]
+15:40:20.940827 [debug]:    Started loading packages
+15:40:20.944003 [debug]:     Loaded [  0.00s] packages
+15:40:20.945163 [info ]: Finished loading project [  0.01s]
+15:40:20.945422 [info ]: Started parsing
+15:40:20.986772 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:40:20.987484 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+15:40:21.196869 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:40:21.199118 [info ]: Cached model count updated: 2 models (estimate)
+15:40:21.199142 [info ]: Cached model count updated: 2 models (accurate)
+15:40:21.199168 [info ]: Started scheduling
+15:40:21.199216 [info ]: Finished scheduling [  0.00s]
+15:40:21.199239 [debug]: Compilation - 0 nodes selected: {}
+15:40:21.199264 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:40:21.199280 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:40:21.199291 [info ]: Started scheduling
+15:40:21.199325 [info ]: Finished scheduling [  0.00s]
+15:40:21.202762 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:21.203326 [info ]: Started building task graph
+15:40:21.203368 [info ]: Finished building task graph [  0.00s]
+15:40:21.210841 [info ]: Started scheduling
+15:40:21.210884 [info ]: Finished scheduling [  0.00s]
+15:40:21.215607 [info ]: Cached model count updated: 2 models (accurate)
+15:40:21.215686 [info ]: Finished parsing [  0.27s]
+15:40:21.481961 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:22.761975 [info ]: Started loading project
+15:40:22.762523 [info ]: Loading profiles.yml
+15:40:22.794097 [info ]: Cached model count updated: 2 models (estimate)
+15:40:22.794120 [info ]: Cached model count updated: 2 models (accurate)
+15:40:22.794146 [info ]: Started scheduling
+15:40:22.794192 [info ]: Finished scheduling [  0.00s]
+15:40:22.794209 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_orders"}
+15:40:22.795231 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:22.795505 [info ]: Started building task graph
+15:40:22.795538 [info ]: Finished building task graph [  0.00s]
+15:40:22.797879 [info ]: Started rendering (1 nodes)
+15:40:22.797929 [info ]: Started model raw.stg_orders
+15:40:22.797948 [debug]: Started rendering model raw.stg_orders
+15:40:22.798022 [info ]: Finished loading project [  0.04s]
+15:40:22.800153 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:40:22.800368 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:40:22.800406 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:40:22.800420 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+15:40:22.805538 [info ]: Started scheduling
+15:40:22.805594 [info ]: Finished scheduling [  0.00s]
+15:40:22.805774 [info ]: Cached model count updated: 2 models (accurate)
+15:40:23.068266 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:41.256619 [info ]: Started loading project
+15:40:41.257703 [info ]: Loading profiles.yml
+15:40:41.268372 [info ]: Started loading project
+15:40:41.269280 [info ]: Loading profiles.yml
+15:40:41.269329 [info ]: Finished loading project [  0.01s]
+15:40:41.276566 [debug]:    Started loading packages
+15:40:41.280819 [debug]:     Loaded [  0.00s] packages
+15:40:41.282112 [info ]: Finished loading project [  0.01s]
+15:40:41.282412 [info ]: Started parsing
+15:40:41.349920 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:40:41.350757 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+15:40:41.584704 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:40:41.586732 [info ]: Cached model count updated: 2 models (estimate)
+15:40:41.586754 [info ]: Cached model count updated: 2 models (accurate)
+15:40:41.586776 [info ]: Started scheduling
+15:40:41.586811 [info ]: Finished scheduling [  0.00s]
+15:40:41.586828 [debug]: Compilation - 0 nodes selected: {}
+15:40:41.586845 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:40:41.586859 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:40:41.586869 [info ]: Started scheduling
+15:40:41.586901 [info ]: Finished scheduling [  0.00s]
+15:40:41.588223 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:41.588551 [info ]: Started building task graph
+15:40:41.588575 [info ]: Finished building task graph [  0.00s]
+15:40:41.596507 [info ]: Started scheduling
+15:40:41.596554 [info ]: Finished scheduling [  0.00s]
+15:40:41.601044 [info ]: Cached model count updated: 2 models (accurate)
+15:40:41.601118 [info ]: Finished parsing [  0.32s]
+15:40:43.155497 [info ]: Started loading project
+15:40:43.156314 [info ]: Loading profiles.yml
+15:40:43.188040 [info ]: Cached model count updated: 2 models (estimate)
+15:40:43.188068 [info ]: Cached model count updated: 2 models (accurate)
+15:40:43.188097 [info ]: Started scheduling
+15:40:43.188179 [info ]: Finished scheduling [  0.00s]
+15:40:43.188199 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_orders"}
+15:40:43.189334 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:43.189627 [info ]: Started building task graph
+15:40:43.189672 [info ]: Finished building task graph [  0.00s]
+15:40:43.191522 [info ]: Started rendering (1 nodes)
+15:40:43.191561 [info ]: Started model raw.stg_orders
+15:40:43.191571 [debug]: Started rendering model raw.stg_orders
+15:40:43.191614 [info ]: Finished loading project [  0.04s]
+15:40:43.193704 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:40:43.193864 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:40:43.193896 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:40:43.193909 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+15:40:43.199275 [info ]: Started scheduling
+15:40:43.199324 [info ]: Finished scheduling [  0.00s]
+15:40:43.199508 [info ]: Cached model count updated: 2 models (accurate)
+15:40:51.030222 [info ]: Started loading project
+15:40:51.030986 [info ]: Loading profiles.yml
+15:40:51.038177 [info ]: Started loading project
+15:40:51.038777 [info ]: Loading profiles.yml
+15:40:51.038804 [info ]: Finished loading project [  0.01s]
+15:40:51.043822 [debug]:    Started loading packages
+15:40:51.046306 [debug]:     Loaded [  0.00s] packages
+15:40:51.047013 [info ]: Finished loading project [  0.01s]
+15:40:51.047310 [info ]: Started parsing
+15:40:51.089431 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:40:51.089967 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+15:40:51.090467 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+15:40:51.317317 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:40:51.319815 [info ]: Cached model count updated: 3 models (estimate)
+15:40:51.319846 [info ]: Cached model count updated: 3 models (accurate)
+15:40:51.319873 [info ]: Started scheduling
+15:40:51.319911 [info ]: Finished scheduling [  0.00s]
+15:40:51.319935 [debug]: Compilation - 0 nodes selected: {}
+15:40:51.319969 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:40:51.319992 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:40:51.320015 [info ]: Started scheduling
+15:40:51.320058 [info ]: Finished scheduling [  0.00s]
+15:40:51.323208 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:51.323642 [info ]: Started building task graph
+15:40:51.323675 [info ]: Finished building task graph [  0.00s]
+15:40:51.334819 [info ]: Started scheduling
+15:40:51.335014 [info ]: Finished scheduling [  0.00s]
+15:40:51.339166 [info ]: Cached model count updated: 3 models (accurate)
+15:40:51.339262 [info ]: Finished parsing [  0.29s]
+15:40:51.602330 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:52.882119 [info ]: Started loading project
+15:40:52.882842 [info ]: Loading profiles.yml
+15:40:52.920530 [info ]: Cached model count updated: 3 models (estimate)
+15:40:52.920559 [info ]: Cached model count updated: 3 models (accurate)
+15:40:52.920624 [info ]: Started scheduling
+15:40:52.920667 [info ]: Finished scheduling [  0.00s]
+15:40:52.920685 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_orders"}
+15:40:52.921649 [debug]: License check failed: Feature not licensed: 'lineage'
+15:40:52.921933 [info ]: Started building task graph
+15:40:52.921964 [info ]: Finished building task graph [  0.00s]
+15:40:52.923770 [info ]: Started rendering (1 nodes)
+15:40:52.923827 [info ]: Started model raw.stg_orders
+15:40:52.923858 [debug]: Started rendering model raw.stg_orders
+15:40:52.923939 [info ]: Finished loading project [  0.04s]
+15:40:52.926192 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:40:52.926411 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:40:52.926444 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:40:52.926459 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+15:40:52.931874 [info ]: Started scheduling
+15:40:52.931935 [info ]: Finished scheduling [  0.00s]
+15:40:52.932110 [info ]: Cached model count updated: 3 models (accurate)
+15:40:53.200496 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:09.576043 [info ]: Started loading project
+15:41:09.576752 [info ]: Loading profiles.yml
+15:41:09.585686 [info ]: Started loading project
+15:41:09.586578 [info ]: Loading profiles.yml
+15:41:09.586650 [info ]: Finished loading project [  0.01s]
+15:41:09.593620 [debug]:    Started loading packages
+15:41:09.596579 [debug]:     Loaded [  0.00s] packages
+15:41:09.597295 [info ]: Finished loading project [  0.01s]
+15:41:09.597498 [info ]: Started parsing
+15:41:09.643730 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:41:09.644162 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+15:41:09.644740 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+15:41:09.645192 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+15:41:09.843014 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:41:09.845622 [info ]: Cached model count updated: 4 models (estimate)
+15:41:09.845651 [info ]: Cached model count updated: 4 models (accurate)
+15:41:09.845679 [info ]: Started scheduling
+15:41:09.845720 [info ]: Finished scheduling [  0.00s]
+15:41:09.845742 [debug]: Compilation - 0 nodes selected: {}
+15:41:09.845764 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+15:41:09.845784 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:41:09.845796 [info ]: Started scheduling
+15:41:09.845833 [info ]: Finished scheduling [  0.00s]
+15:41:09.847444 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:09.847893 [info ]: Started building task graph
+15:41:09.847928 [info ]: Finished building task graph [  0.00s]
+15:41:09.856635 [info ]: Started scheduling
+15:41:09.856697 [info ]: Finished scheduling [  0.00s]
+15:41:09.857106 [info ]: Finished parsing [  0.26s]
+15:41:09.860936 [info ]: Cached model count updated: 4 models (accurate)
+15:41:10.114737 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:11.411636 [info ]: Started loading project
+15:41:11.412712 [info ]: Loading profiles.yml
+15:41:11.445384 [info ]: Cached model count updated: 4 models (estimate)
+15:41:11.445405 [info ]: Cached model count updated: 4 models (accurate)
+15:41:11.445433 [info ]: Started scheduling
+15:41:11.445474 [info ]: Finished scheduling [  0.00s]
+15:41:11.445489 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_orders"}
+15:41:11.446491 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:11.446795 [info ]: Started building task graph
+15:41:11.446823 [info ]: Finished building task graph [  0.00s]
+15:41:11.448826 [info ]: Started rendering (1 nodes)
+15:41:11.448863 [info ]: Started model raw.stg_orders
+15:41:11.448883 [debug]: Started rendering model raw.stg_orders
+15:41:11.448943 [info ]: Finished loading project [  0.04s]
+15:41:11.450741 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:41:11.450938 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:41:11.450967 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:41:11.450978 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+15:41:11.455515 [info ]: Started scheduling
+15:41:11.455556 [info ]: Finished scheduling [  0.00s]
+15:41:11.455683 [info ]: Cached model count updated: 4 models (accurate)
+15:41:11.714371 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:14.103763 [info ]: Started loading project
+15:41:14.104556 [info ]: Loading profiles.yml
+15:41:14.138972 [info ]: Cached model count updated: 4 models (estimate)
+15:41:14.138996 [info ]: Cached model count updated: 4 models (accurate)
+15:41:14.139021 [info ]: Started scheduling
+15:41:14.139730 [info ]: Finished scheduling [  0.00s]
+15:41:14.139757 [debug]: Compilation - 0 nodes selected: {}
+15:41:14.139782 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+fqn:model.analytics.stg_customers' does not match any enabled nodes
+15:41:14.139794 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:41:14.140747 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:14.140984 [info ]: Started building task graph
+15:41:14.141004 [info ]: Finished building task graph [  0.00s]
+15:41:14.147956 [info ]: Started scheduling
+15:41:14.148032 [info ]: Finished scheduling [  0.00s]
+15:41:14.148138 [info ]: Finished loading project [  0.04s]
+15:41:14.148157 [info ]: Cached model count updated: 4 models (accurate)
+15:41:14.408517 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:15.680998 [info ]: Started loading project
+15:41:15.681695 [info ]: Loading profiles.yml
+15:41:15.714446 [info ]: Cached model count updated: 4 models (estimate)
+15:41:15.714468 [info ]: Cached model count updated: 4 models (accurate)
+15:41:15.714492 [info ]: Started scheduling
+15:41:15.714533 [info ]: Finished scheduling [  0.00s]
+15:41:15.714548 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_orders"}
+15:41:15.715598 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:15.715894 [info ]: Started building task graph
+15:41:15.715923 [info ]: Finished building task graph [  0.00s]
+15:41:15.717848 [info ]: Started rendering (1 nodes)
+15:41:15.717877 [info ]: Started model raw.stg_orders
+15:41:15.717888 [debug]: Started rendering model raw.stg_orders
+15:41:15.717942 [info ]: Finished loading project [  0.04s]
+15:41:15.718305 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:41:15.718403 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:41:15.718429 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:41:15.718441 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+15:41:15.722978 [info ]: Started scheduling
+15:41:15.723021 [info ]: Finished scheduling [  0.00s]
+15:41:15.723145 [info ]: Cached model count updated: 4 models (accurate)
+15:41:15.985841 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:18.234630 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:58.786869 [info ]: Started loading project
+15:41:58.787464 [info ]: Loading profiles.yml
+15:41:58.794862 [info ]: Started parsing
+15:41:58.842162 [info ]: Finished loading project [  0.06s]
+15:41:58.844170 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:41:59.001192 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:41:59.005533 [info ]: Cached model count updated: 4 models (estimate)
+15:41:59.005552 [info ]: Cached model count updated: 4 models (accurate)
+15:41:59.005575 [info ]: Started scheduling
+15:41:59.005620 [info ]: Finished scheduling [  0.00s]
+15:41:59.005637 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_customers"}
+15:41:59.006454 [debug]: License check failed: Feature not licensed: 'lineage'
+15:41:59.006817 [info ]: Started building task graph
+15:41:59.006852 [info ]: Finished building task graph [  0.00s]
+15:41:59.009128 [info ]: Started rendering (1 nodes)
+15:41:59.009185 [info ]: Started model raw.stg_customers
+15:41:59.009200 [debug]: Started rendering model raw.stg_customers
+15:41:59.009293 [info ]: Finished parsing [  0.21s]
+15:41:59.011743 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+15:41:59.011961 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+15:41:59.011993 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:41:59.012007 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+15:41:59.017499 [info ]: Started scheduling
+15:41:59.017605 [info ]: Finished scheduling [  0.00s]
+15:41:59.019189 [info ]: Cached model count updated: 4 models (accurate)
+15:41:59.284939 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:00.588173 [info ]: Started loading project
+15:42:00.588815 [info ]: Loading profiles.yml
+15:42:00.620661 [info ]: Cached model count updated: 4 models (estimate)
+15:42:00.620689 [info ]: Cached model count updated: 4 models (accurate)
+15:42:00.620721 [info ]: Started scheduling
+15:42:00.621089 [info ]: Finished scheduling [  0.00s]
+15:42:00.621121 [debug]: Compilation - 2 nodes selected: {"model.analytics.stg_customers", "model.analytics.stg_orders"}
+15:42:00.622748 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:00.623103 [info ]: Started building task graph
+15:42:00.623142 [info ]: Finished building task graph [  0.00s]
+15:42:00.625148 [info ]: Started rendering (2 nodes)
+15:42:00.625178 [info ]: Started model raw.stg_orders
+15:42:00.625188 [debug]: Started rendering model raw.stg_orders
+15:42:00.625211 [info ]: Started model raw.stg_customers
+15:42:00.625221 [debug]: Started rendering model raw.stg_customers
+15:42:00.625244 [info ]: Finished loading project [  0.04s]
+15:42:00.625681 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+15:42:00.625680 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:42:00.625771 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+15:42:00.625827 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+15:42:00.625859 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:42:00.625876 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:42:00.625886 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+15:42:00.630008 [info ]: Started scheduling
+15:42:00.630066 [info ]: Finished scheduling [  0.00s]
+15:42:00.630381 [info ]: Cached model count updated: 4 models (accurate)
+15:42:00.893674 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:05.054741 [info ]: Started loading project
+15:42:05.055528 [info ]: Loading profiles.yml
+15:42:05.092863 [info ]: Cached model count updated: 4 models (estimate)
+15:42:05.092889 [info ]: Cached model count updated: 4 models (accurate)
+15:42:05.092921 [info ]: Started scheduling
+15:42:05.092983 [info ]: Finished scheduling [  0.00s]
+15:42:05.093005 [debug]: Compilation - 0 nodes selected: {}
+15:42:05.093031 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+fqn:model.analytics.stg_order_items' does not match any enabled nodes
+15:42:05.093049 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:42:05.094398 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:05.094782 [info ]: Started building task graph
+15:42:05.094817 [info ]: Finished building task graph [  0.00s]
+15:42:05.102643 [info ]: Started scheduling
+15:42:05.102699 [info ]: Finished scheduling [  0.00s]
+15:42:05.102793 [info ]: Finished loading project [  0.05s]
+15:42:05.102809 [info ]: Cached model count updated: 4 models (accurate)
+15:42:05.358940 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:06.652674 [info ]: Started loading project
+15:42:06.653772 [info ]: Loading profiles.yml
+15:42:06.689934 [info ]: Cached model count updated: 4 models (estimate)
+15:42:06.689960 [info ]: Cached model count updated: 4 models (accurate)
+15:42:06.689994 [info ]: Started scheduling
+15:42:06.690056 [info ]: Finished scheduling [  0.00s]
+15:42:06.690080 [debug]: Compilation - 2 nodes selected: {"model.analytics.stg_customers", "model.analytics.stg_orders"}
+15:42:06.691077 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:06.691396 [info ]: Started building task graph
+15:42:06.691436 [info ]: Finished building task graph [  0.00s]
+15:42:06.694194 [info ]: Started rendering (2 nodes)
+15:42:06.694227 [info ]: Started model raw.stg_orders
+15:42:06.694242 [debug]: Started rendering model raw.stg_orders
+15:42:06.694279 [info ]: Started model raw.stg_customers
+15:42:06.694294 [debug]: Started rendering model raw.stg_customers
+15:42:06.694306 [info ]: Finished loading project [  0.04s]
+15:42:06.694777 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+15:42:06.694984 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+15:42:06.695035 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+15:42:06.695050 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:42:06.695119 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:42:06.695137 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+15:42:06.695147 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+15:42:06.699709 [info ]: Started scheduling
+15:42:06.699759 [info ]: Finished scheduling [  0.00s]
+15:42:06.699887 [info ]: Cached model count updated: 4 models (accurate)
+15:42:06.957719 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:24.927506 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:26.383245 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:32.163299 [info ]: Started loading project
+15:42:32.164045 [info ]: Loading profiles.yml
+15:42:32.171689 [info ]: Started parsing
+15:42:32.234390 [info ]: Finished loading project [  0.07s]
+15:42:32.237362 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+15:42:32.407805 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:42:32.410731 [info ]: Cached model count updated: 4 models (estimate)
+15:42:32.410750 [info ]: Cached model count updated: 4 models (accurate)
+15:42:32.410772 [info ]: Started scheduling
+15:42:32.410817 [info ]: Finished scheduling [  0.00s]
+15:42:32.410832 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_order_items"}
+15:42:32.411742 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:32.412214 [info ]: Started building task graph
+15:42:32.412262 [info ]: Finished building task graph [  0.00s]
+15:42:32.414714 [info ]: Started rendering (1 nodes)
+15:42:32.414750 [info ]: Started model raw.stg_order_items
+15:42:32.414766 [debug]: Started rendering model raw.stg_order_items
+15:42:32.414847 [info ]: Finished parsing [  0.24s]
+15:42:32.416698 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+15:42:32.416924 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+15:42:32.416957 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:42:32.416971 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+15:42:32.421484 [info ]: Started scheduling
+15:42:32.421562 [info ]: Finished scheduling [  0.00s]
+15:42:32.422879 [info ]: Cached model count updated: 4 models (accurate)
+15:42:32.692006 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:33.970288 [info ]: Started loading project
+15:42:33.971039 [info ]: Loading profiles.yml
+15:42:33.998207 [info ]: Cached model count updated: 4 models (estimate)
+15:42:33.998227 [info ]: Cached model count updated: 4 models (accurate)
+15:42:33.998248 [info ]: Started scheduling
+15:42:33.998291 [info ]: Finished scheduling [  0.00s]
+15:42:33.998306 [debug]: Compilation - 3 nodes selected: {"model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+15:42:33.999137 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:33.999381 [info ]: Started building task graph
+15:42:33.999411 [info ]: Finished building task graph [  0.00s]
+15:42:34.001222 [info ]: Started rendering (3 nodes)
+15:42:34.001247 [info ]: Started model raw.stg_orders
+15:42:34.001257 [debug]: Started rendering model raw.stg_orders
+15:42:34.001279 [info ]: Started model raw.stg_order_items
+15:42:34.001286 [debug]: Started rendering model raw.stg_order_items
+15:42:34.001296 [info ]: Started model raw.stg_customers
+15:42:34.001303 [debug]: Started rendering model raw.stg_customers
+15:42:34.001335 [info ]: Finished loading project [  0.03s]
+15:42:34.001707 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+15:42:34.001765 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:42:34.001795 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+15:42:34.001821 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+15:42:34.001848 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:42:34.001864 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+15:42:34.001953 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+15:42:34.002014 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+15:42:34.002037 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 0 errors)
+15:42:34.002049 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+15:42:34.005970 [info ]: Started scheduling
+15:42:34.006014 [info ]: Finished scheduling [  0.00s]
+15:42:34.006150 [info ]: Cached model count updated: 4 models (accurate)
+15:42:34.270446 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:50.500142 [info ]: Started loading project
+15:42:50.500955 [info ]: Loading profiles.yml
+15:42:50.560190 [info ]: Cached model count updated: 4 models (estimate)
+15:42:50.560262 [info ]: Cached model count updated: 4 models (accurate)
+15:42:50.560308 [info ]: Started scheduling
+15:42:50.560387 [info ]: Finished scheduling [  0.00s]
+15:42:50.560408 [debug]: Compilation - 0 nodes selected: {}
+15:42:50.560450 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+fqn:model.analytics.stg_products' does not match any enabled nodes
+15:42:50.560467 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+15:42:50.562291 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:50.562704 [info ]: Started building task graph
+15:42:50.562743 [info ]: Finished building task graph [  0.00s]
+15:42:50.572047 [info ]: Started scheduling
+15:42:50.572110 [info ]: Finished scheduling [  0.00s]
+15:42:50.572275 [info ]: Cached model count updated: 4 models (accurate)
+15:42:50.572282 [info ]: Finished loading project [  0.07s]
+15:42:50.840369 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:52.126535 [info ]: Started loading project
+15:42:52.127153 [info ]: Loading profiles.yml
+15:42:52.158905 [info ]: Cached model count updated: 4 models (estimate)
+15:42:52.158928 [info ]: Cached model count updated: 4 models (accurate)
+15:42:52.158956 [info ]: Started scheduling
+15:42:52.159002 [info ]: Finished scheduling [  0.00s]
+15:42:52.159021 [debug]: Compilation - 3 nodes selected: {"model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+15:42:52.159991 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:52.160326 [info ]: Started building task graph
+15:42:52.160370 [info ]: Finished building task graph [  0.00s]
+15:42:52.162745 [info ]: Started rendering (3 nodes)
+15:42:52.162782 [info ]: Started model raw.stg_orders
+15:42:52.162796 [debug]: Started rendering model raw.stg_orders
+15:42:52.162831 [info ]: Started model raw.stg_order_items
+15:42:52.162844 [debug]: Started rendering model raw.stg_order_items
+15:42:52.162861 [info ]: Started model raw.stg_customers
+15:42:52.162858 [info ]: Finished loading project [  0.04s]
+15:42:52.162870 [debug]: Started rendering model raw.stg_customers
+15:42:52.163568 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+15:42:52.163577 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+15:42:52.163569 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:42:52.163677 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+15:42:52.163701 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+15:42:52.163730 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+15:42:52.163747 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+15:42:52.163779 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:42:52.163798 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 0 errors)
+15:42:52.163809 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+15:42:52.168565 [info ]: Started scheduling
+15:42:52.168609 [info ]: Finished scheduling [  0.00s]
+15:42:52.168718 [info ]: Cached model count updated: 4 models (accurate)
+15:42:52.432949 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:54.867254 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:59.672575 [info ]: Started loading project
+15:42:59.673299 [info ]: Loading profiles.yml
+15:42:59.686987 [info ]: Started parsing
+15:42:59.772565 [info ]: Finished loading project [  0.10s]
+15:42:59.775936 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+15:42:59.958583 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.analytics.marts
+15:42:59.962979 [info ]: Cached model count updated: 4 models (estimate)
+15:42:59.963043 [info ]: Cached model count updated: 4 models (accurate)
+15:42:59.963088 [info ]: Started scheduling
+15:42:59.963168 [info ]: Finished scheduling [  0.00s]
+15:42:59.963191 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_products"}
+15:42:59.964534 [debug]: License check failed: Feature not licensed: 'lineage'
+15:42:59.964935 [info ]: Started building task graph
+15:42:59.964985 [info ]: Finished building task graph [  0.00s]
+15:42:59.966880 [info ]: Started rendering (1 nodes)
+15:42:59.966917 [info ]: Started model raw.stg_products
+15:42:59.966932 [debug]: Started rendering model raw.stg_products
+15:42:59.966996 [info ]: Finished parsing [  0.28s]
+15:42:59.969120 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+15:42:59.969282 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+15:42:59.969307 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:42:59.969321 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+15:42:59.974774 [info ]: Started scheduling
+15:42:59.974858 [info ]: Finished scheduling [  0.00s]
+15:42:59.976367 [info ]: Cached model count updated: 4 models (accurate)
+15:43:00.240626 [debug]: License check failed: Feature not licensed: 'lineage'
+15:43:01.548435 [info ]: Started loading project
+15:43:01.549441 [info ]: Loading profiles.yml
+15:43:01.618043 [info ]: Cached model count updated: 4 models (estimate)
+15:43:01.618070 [info ]: Cached model count updated: 4 models (accurate)
+15:43:01.618104 [info ]: Started scheduling
+15:43:01.618177 [info ]: Finished scheduling [  0.00s]
+15:43:01.618197 [debug]: Compilation - 4 nodes selected: {"model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+15:43:01.619866 [debug]: License check failed: Feature not licensed: 'lineage'
+15:43:01.620349 [info ]: Started building task graph
+15:43:01.620414 [info ]: Finished building task graph [  0.00s]
+15:43:01.624051 [info ]: Started rendering (4 nodes)
+15:43:01.624092 [info ]: Started model raw.stg_products
+15:43:01.624108 [debug]: Started rendering model raw.stg_products
+15:43:01.624146 [info ]: Started model raw.stg_orders
+15:43:01.624156 [debug]: Started rendering model raw.stg_orders
+15:43:01.624171 [info ]: Started model raw.stg_order_items
+15:43:01.624180 [debug]: Started rendering model raw.stg_order_items
+15:43:01.624193 [info ]: Started model raw.stg_customers
+15:43:01.624202 [debug]: Started rendering model raw.stg_customers
+15:43:01.624241 [info ]: Finished loading project [  0.08s]
+15:43:01.627374 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+15:43:01.627373 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+15:43:01.627451 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+15:43:01.627502 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+15:43:01.627531 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+15:43:01.627562 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+15:43:01.627578 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+15:43:01.627597 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+15:43:01.627607 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+15:43:01.627770 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+15:43:01.627944 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+15:43:01.628166 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:43:01.628293 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+15:43:01.636214 [info ]: Started scheduling
+15:43:01.636271 [info ]: Finished scheduling [  0.00s]
+15:43:01.636476 [info ]: Cached model count updated: 4 models (accurate)
+15:43:01.906792 [debug]: License check failed: Feature not licensed: 'lineage'
+15:43:22.433233 [debug]: License check failed: Feature not licensed: 'lineage'
+16:17:11.884012 [debug]: License check failed: Feature not licensed: 'lineage'
+16:17:19.085140 [debug]: License check failed: Feature not licensed: 'lineage'
+16:17:41.843263 [info ]: Started loading project
+16:17:41.844108 [info ]: Loading profiles.yml
+16:17:41.853547 [info ]: Started loading project
+16:17:41.854684 [info ]: Loading profiles.yml
+16:17:41.854724 [info ]: Finished loading project [  0.01s]
+16:17:41.860350 [debug]:    Started loading packages
+16:17:41.863286 [debug]:     Loaded [  0.00s] packages
+16:17:41.864121 [info ]: Finished loading project [  0.01s]
+16:17:41.864362 [info ]: Started parsing
+16:17:41.906682 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+16:17:41.907327 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+16:17:41.907991 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+16:17:41.908488 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+16:17:41.908965 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+16:17:42.088812 [info ]: Finished parsing [  0.22s]
+16:17:42.089553 [info ]: Cached model count updated: 5 models (estimate)
+16:17:42.089571 [info ]: Cached model count updated: 5 models (accurate)
+16:17:42.089600 [info ]: Started scheduling
+16:17:42.089787 [info ]: Finished scheduling [  0.00s]
+16:17:42.089846 [debug]: Compilation - 0 nodes selected: {}
+16:17:42.089901 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+16:17:42.089924 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+16:17:42.089941 [info ]: Started scheduling
+16:17:42.090005 [info ]: Finished scheduling [  0.00s]
+16:17:42.091668 [debug]: License check failed: Feature not licensed: 'lineage'
+16:17:42.091943 [info ]: Started building task graph
+16:17:42.091974 [info ]: Finished building task graph [  0.00s]
+16:17:42.098656 [info ]: Started scheduling
+16:17:42.098712 [info ]: Finished scheduling [  0.00s]
+16:17:42.102185 [info ]: Cached model count updated: 5 models (accurate)
+16:17:42.355978 [debug]: License check failed: Feature not licensed: 'lineage'
+16:17:43.657446 [info ]: Started loading project
+16:17:43.658182 [info ]: Loading profiles.yml
+16:17:43.689966 [info ]: Cached model count updated: 5 models (estimate)
+16:17:43.689992 [info ]: Cached model count updated: 5 models (accurate)
+16:17:43.690021 [info ]: Started scheduling
+16:17:43.690086 [info ]: Finished scheduling [  0.00s]
+16:17:43.690108 [debug]: Compilation - 4 nodes selected: {"model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+16:17:43.691162 [debug]: License check failed: Feature not licensed: 'lineage'
+16:17:43.691518 [info ]: Started building task graph
+16:17:43.691562 [info ]: Finished building task graph [  0.00s]
+16:17:43.693441 [info ]: Started rendering (4 nodes)
+16:17:43.693475 [info ]: Started model raw.stg_products
+16:17:43.693487 [debug]: Started rendering model raw.stg_products
+16:17:43.693518 [info ]: Started model raw.stg_orders
+16:17:43.693530 [debug]: Started rendering model raw.stg_orders
+16:17:43.693554 [info ]: Started model raw.stg_order_items
+16:17:43.693572 [info ]: Finished loading project [  0.04s]
+16:17:43.693565 [debug]: Started rendering model raw.stg_order_items
+16:17:43.693636 [info ]: Started model raw.stg_customers
+16:17:43.693650 [debug]: Started rendering model raw.stg_customers
+16:17:43.695861 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+16:17:43.696108 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+16:17:43.696144 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+16:17:43.697175 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:17:43.699043 [debug]: Finished rendering [  0.01s] model raw.stg_orders [success]
+16:17:43.699084 [info ]:  Succeeded [  0.01s] model raw.stg_orders (view)
+16:17:43.699876 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:17:43.700138 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+16:17:43.700302 [debug]: Finished rendering [  0.01s] model raw.stg_order_items [success]
+16:17:43.700335 [info ]:  Succeeded [  0.01s] model raw.stg_order_items (view)
+16:17:43.700389 [debug]: Finished rendering [  0.01s] model raw.stg_customers [success]
+16:17:43.700407 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+16:17:43.700421 [info ]:  Succeeded [  0.01s] model raw.stg_customers (view)
+16:17:43.705621 [info ]: Started scheduling
+16:17:43.705680 [info ]: Finished scheduling [  0.00s]
+16:17:43.705832 [info ]: Cached model count updated: 5 models (accurate)
+16:17:43.962890 [debug]: License check failed: Feature not licensed: 'lineage'
+16:17:45.112781 [debug]: License check failed: Feature not licensed: 'lineage'
+16:31:27.035207 [info ]: Started loading project
+16:31:27.035913 [info ]: Loading profiles.yml
+16:31:27.046417 [info ]: Started loading project
+16:31:27.047327 [info ]: Loading profiles.yml
+16:31:27.047362 [info ]: Finished loading project [  0.01s]
+16:31:27.055394 [debug]:    Started loading packages
+16:31:27.061150 [debug]:     Loaded [  0.01s] packages
+16:31:27.062060 [info ]: Finished loading project [  0.02s]
+16:31:27.062258 [info ]: Started parsing
+16:31:27.119941 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+16:31:27.121055 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+16:31:27.121951 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+16:31:27.123298 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+16:31:27.124442 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+16:31:27.125108 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+16:31:27.386916 [info ]: Finished parsing [  0.32s]
+16:31:27.387671 [info ]: Cached model count updated: 6 models (estimate)
+16:31:27.387693 [info ]: Cached model count updated: 6 models (accurate)
+16:31:27.387722 [info ]: Started scheduling
+16:31:27.387770 [info ]: Finished scheduling [  0.00s]
+16:31:27.387788 [debug]: Compilation - 0 nodes selected: {}
+16:31:27.387823 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+16:31:27.387840 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+16:31:27.387852 [info ]: Started scheduling
+16:31:27.387893 [info ]: Finished scheduling [  0.00s]
+16:31:27.388882 [debug]: License check failed: Feature not licensed: 'lineage'
+16:31:27.389268 [info ]: Started building task graph
+16:31:27.389300 [info ]: Finished building task graph [  0.00s]
+16:31:27.403964 [info ]: Started scheduling
+16:31:27.404016 [info ]: Finished scheduling [  0.00s]
+16:31:27.410957 [info ]: Cached model count updated: 6 models (accurate)
+16:31:27.668672 [debug]: License check failed: Feature not licensed: 'lineage'
+16:31:28.962006 [info ]: Started loading project
+16:31:28.962915 [info ]: Loading profiles.yml
+16:31:29.001547 [info ]: Cached model count updated: 6 models (estimate)
+16:31:29.001570 [info ]: Cached model count updated: 6 models (accurate)
+16:31:29.001595 [info ]: Started scheduling
+16:31:29.001665 [info ]: Finished scheduling [  0.00s]
+16:31:29.001695 [debug]: Compilation - 4 nodes selected: {"model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+16:31:29.003586 [debug]: License check failed: Feature not licensed: 'lineage'
+16:31:29.004058 [info ]: Started building task graph
+16:31:29.004122 [info ]: Finished building task graph [  0.00s]
+16:31:29.006148 [info ]: Started rendering (4 nodes)
+16:31:29.006184 [info ]: Started model raw.stg_products
+16:31:29.006205 [debug]: Started rendering model raw.stg_products
+16:31:29.006241 [info ]: Started model raw.stg_orders
+16:31:29.006255 [debug]: Started rendering model raw.stg_orders
+16:31:29.006266 [info ]: Finished loading project [  0.04s]
+16:31:29.006269 [info ]: Started model raw.stg_order_items
+16:31:29.006281 [debug]: Started rendering model raw.stg_order_items
+16:31:29.006296 [info ]: Started model raw.stg_customers
+16:31:29.006311 [debug]: Started rendering model raw.stg_customers
+16:31:29.010224 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+16:31:29.010030 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:31:29.010422 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+16:31:29.010451 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+16:31:29.010543 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+16:31:29.010563 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+16:31:29.010884 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:31:29.011054 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:31:29.011085 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+16:31:29.011305 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+16:31:29.011732 [debug]: Finished rendering [  0.01s] model raw.stg_customers [success]
+16:31:29.011770 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+16:31:29.011784 [info ]:  Succeeded [  0.01s] model raw.stg_customers (view)
+16:31:29.016416 [info ]: Started scheduling
+16:31:29.016486 [info ]: Finished scheduling [  0.00s]
+16:31:29.016698 [info ]: Cached model count updated: 6 models (accurate)
+16:31:29.284115 [debug]: License check failed: Feature not licensed: 'lineage'
+16:32:02.142457 [debug]: License check failed: Feature not licensed: 'lineage'
+16:33:58.677523 [info ]: Started loading project
+16:33:58.678391 [info ]: Loading profiles.yml
+16:33:58.686451 [info ]: Started loading project
+16:33:58.687151 [info ]: Loading profiles.yml
+16:33:58.687182 [info ]: Finished loading project [  0.01s]
+16:33:58.693691 [debug]:    Started loading packages
+16:33:58.696342 [debug]:     Loaded [  0.00s] packages
+16:33:58.697185 [info ]: Finished loading project [  0.01s]
+16:33:58.697420 [info ]: Started parsing
+16:33:58.738499 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+16:33:58.739396 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+16:33:58.740087 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+16:33:58.740541 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+16:33:58.740997 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+16:33:58.741424 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+16:33:58.741847 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+16:33:58.927734 [info ]: Finished parsing [  0.23s]
+16:33:58.928796 [info ]: Cached model count updated: 7 models (estimate)
+16:33:58.928824 [info ]: Cached model count updated: 7 models (accurate)
+16:33:58.928858 [info ]: Started scheduling
+16:33:58.928910 [info ]: Finished scheduling [  0.00s]
+16:33:58.928928 [debug]: Compilation - 0 nodes selected: {}
+16:33:58.928953 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+16:33:58.928971 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+16:33:58.928983 [info ]: Started scheduling
+16:33:58.929036 [info ]: Finished scheduling [  0.00s]
+16:33:58.930458 [debug]: License check failed: Feature not licensed: 'lineage'
+16:33:58.930849 [info ]: Started building task graph
+16:33:58.930907 [info ]: Finished building task graph [  0.00s]
+16:33:58.938980 [info ]: Started scheduling
+16:33:58.939037 [info ]: Finished scheduling [  0.00s]
+16:33:58.942494 [info ]: Cached model count updated: 7 models (accurate)
+16:33:59.195492 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:00.507843 [info ]: Started loading project
+16:34:00.508601 [info ]: Loading profiles.yml
+16:34:00.542455 [info ]: Cached model count updated: 7 models (estimate)
+16:34:00.542477 [info ]: Cached model count updated: 7 models (accurate)
+16:34:00.542503 [info ]: Started scheduling
+16:34:00.542557 [info ]: Finished scheduling [  0.00s]
+16:34:00.542573 [debug]: Compilation - 4 nodes selected: {"model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+16:34:00.543542 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:00.543879 [info ]: Started building task graph
+16:34:00.543931 [info ]: Finished building task graph [  0.00s]
+16:34:00.546025 [info ]: Started rendering (4 nodes)
+16:34:00.546058 [info ]: Started model raw.stg_products
+16:34:00.546070 [debug]: Started rendering model raw.stg_products
+16:34:00.546100 [info ]: Started model raw.stg_orders
+16:34:00.546114 [debug]: Started rendering model raw.stg_orders
+16:34:00.546127 [info ]: Finished loading project [  0.04s]
+16:34:00.546131 [info ]: Started model raw.stg_order_items
+16:34:00.546141 [debug]: Started rendering model raw.stg_order_items
+16:34:00.546157 [info ]: Started model raw.stg_customers
+16:34:00.546167 [debug]: Started rendering model raw.stg_customers
+16:34:00.549614 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+16:34:00.549819 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:34:00.549937 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+16:34:00.550689 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:00.550682 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+16:34:00.550724 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+16:34:00.550805 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+16:34:00.550820 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+16:34:00.550862 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+16:34:00.550883 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+16:34:00.550914 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:00.550926 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+16:34:00.550936 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+16:34:00.555317 [info ]: Started scheduling
+16:34:00.555360 [info ]: Finished scheduling [  0.00s]
+16:34:00.555463 [info ]: Cached model count updated: 7 models (accurate)
+16:34:00.808826 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:06.651944 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:12.434802 [info ]: Started loading project
+16:34:12.435650 [info ]: Loading profiles.yml
+16:34:12.443286 [info ]: Started parsing
+16:34:12.493243 [info ]: Finished loading project [  0.06s]
+16:34:12.498422 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+16:34:12.648256 [info ]: Finished parsing [  0.20s]
+16:34:12.650651 [info ]: Cached model count updated: 7 models (estimate)
+16:34:12.650687 [info ]: Cached model count updated: 7 models (accurate)
+16:34:12.650714 [info ]: Started scheduling
+16:34:12.651087 [info ]: Finished scheduling [  0.00s]
+16:34:12.651124 [debug]: Compilation - 4 nodes selected: {"model.analytics.sales_by_category", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+16:34:12.652152 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:12.653883 [info ]: Started building task graph
+16:34:12.654230 [info ]: Finished building task graph [  0.00s]
+16:34:12.657509 [info ]: Started rendering (4 nodes)
+16:34:12.657540 [info ]: Started model raw.sales_by_category
+16:34:12.657550 [debug]: Started rendering model raw.sales_by_category
+16:34:12.657577 [info ]: Started model raw.stg_products
+16:34:12.657590 [debug]: Started rendering model raw.stg_products
+16:34:12.657606 [info ]: Started model raw.stg_orders
+16:34:12.657624 [debug]: Started rendering model raw.stg_orders
+16:34:12.657644 [info ]: Started model raw.stg_order_items
+16:34:12.657657 [debug]: Started rendering model raw.stg_order_items
+16:34:12.658066 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+16:34:12.658372 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+16:34:12.658401 [info ]:  Succeeded [-------] model raw.stg_products (view)
+16:34:12.658698 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:12.658759 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:34:12.658805 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:12.658829 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+16:34:12.658858 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+16:34:12.658875 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+16:34:12.661616 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+16:34:12.661824 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+16:34:12.661852 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+16:34:12.661866 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+16:34:12.667603 [info ]: Started scheduling
+16:34:12.667703 [info ]: Finished scheduling [  0.00s]
+16:34:12.669408 [info ]: Cached model count updated: 7 models (accurate)
+16:34:12.934818 [info ]: Started loading project
+16:34:12.935590 [info ]: Loading profiles.yml
+16:34:12.945477 [info ]: Started parsing
+16:34:13.003605 [info ]: Finished loading project [  0.07s]
+16:34:13.005322 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+16:34:13.172066 [info ]: Finished parsing [  0.23s]
+16:34:13.179401 [info ]: Cached model count updated: 7 models (accurate)
+16:34:13.218231 [info ]: Started loading project
+16:34:13.219113 [info ]: Loading profiles.yml
+16:34:13.229662 [info ]: Started parsing
+16:34:13.311132 [info ]: Finished loading project [  0.09s]
+16:34:13.317137 [info ]: Cached model count updated: 7 models (accurate)
+16:34:13.325310 [info ]: Finished parsing [  0.10s]
+16:34:13.387414 [info ]: Started loading project
+16:34:13.388328 [info ]: Loading profiles.yml
+16:34:13.401966 [info ]: Started parsing
+16:34:13.478167 [info ]: Finished loading project [  0.09s]
+16:34:13.481857 [info ]: Cached model count updated: 7 models (accurate)
+16:34:13.486442 [info ]: Finished parsing [  0.08s]
+16:34:13.515838 [info ]: Started loading project
+16:34:13.516396 [info ]: Loading profiles.yml
+16:34:13.524145 [info ]: Started parsing
+16:34:13.577491 [info ]: Finished loading project [  0.06s]
+16:34:13.580867 [info ]: Cached model count updated: 7 models (accurate)
+16:34:13.584525 [info ]: Finished parsing [  0.06s]
+16:34:13.611068 [info ]: Started loading project
+16:34:13.611658 [info ]: Loading profiles.yml
+16:34:13.618545 [info ]: Started parsing
+16:34:13.680416 [info ]: Finished loading project [  0.07s]
+16:34:13.684056 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+16:34:13.878693 [info ]: Finished parsing [  0.26s]
+16:34:13.889429 [info ]: Cached model count updated: 7 models (accurate)
+16:34:13.939307 [info ]: Cached model count updated: 7 models (accurate)
+16:34:14.002784 [info ]: Started loading project
+16:34:14.003563 [info ]: Loading profiles.yml
+16:34:14.014978 [info ]: Started parsing
+16:34:14.100024 [info ]: Finished loading project [  0.10s]
+16:34:14.102167 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+16:34:14.269177 [info ]: Finished parsing [  0.25s]
+16:34:14.271440 [info ]: Cached model count updated: 7 models (estimate)
+16:34:14.271466 [info ]: Cached model count updated: 7 models (accurate)
+16:34:14.271564 [info ]: Started scheduling
+16:34:14.271663 [info ]: Finished scheduling [  0.00s]
+16:34:14.271684 [debug]: Compilation - 4 nodes selected: {"model.analytics.sales_by_category", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+16:34:14.272600 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:14.272924 [info ]: Started building task graph
+16:34:14.272979 [info ]: Finished building task graph [  0.00s]
+16:34:14.275566 [info ]: Started rendering (4 nodes)
+16:34:14.275602 [info ]: Started model raw.sales_by_category
+16:34:14.275617 [debug]: Started rendering model raw.sales_by_category
+16:34:14.275651 [info ]: Started model raw.stg_products
+16:34:14.275665 [debug]: Started rendering model raw.stg_products
+16:34:14.275686 [info ]: Started model raw.stg_orders
+16:34:14.275698 [debug]: Started rendering model raw.stg_orders
+16:34:14.275719 [info ]: Started model raw.stg_order_items
+16:34:14.276070 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:14.276077 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+16:34:14.276209 [debug]: Started rendering model raw.stg_order_items
+16:34:14.276269 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+16:34:14.276292 [info ]:  Succeeded [-------] model raw.stg_products (view)
+16:34:14.276316 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:14.276325 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+16:34:14.276687 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:34:14.276800 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+16:34:14.276829 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+16:34:14.278053 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+16:34:14.278236 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+16:34:14.278262 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+16:34:14.278275 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+16:34:14.283854 [info ]: Started scheduling
+16:34:14.283947 [info ]: Finished scheduling [  0.00s]
+16:34:14.285348 [info ]: Cached model count updated: 7 models (accurate)
+16:34:14.540670 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:15.827365 [info ]: Started loading project
+16:34:15.827954 [info ]: Loading profiles.yml
+16:34:15.855777 [info ]: Cached model count updated: 7 models (estimate)
+16:34:15.855797 [info ]: Cached model count updated: 7 models (accurate)
+16:34:15.855827 [info ]: Started scheduling
+16:34:15.855921 [info ]: Finished scheduling [  0.00s]
+16:34:15.855953 [debug]: Compilation - 5 nodes selected: {"model.analytics.sales_by_category", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+16:34:15.856841 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:15.857494 [info ]: Started building task graph
+16:34:15.857554 [info ]: Finished building task graph [  0.00s]
+16:34:15.859455 [info ]: Started rendering (5 nodes)
+16:34:15.859567 [info ]: Started model raw.stg_customers
+16:34:15.859602 [debug]: Started rendering model raw.stg_customers
+16:34:15.859643 [info ]: Started model raw.sales_by_category
+16:34:15.859654 [debug]: Started rendering model raw.sales_by_category
+16:34:15.859669 [info ]: Finished loading project [  0.03s]
+16:34:15.859674 [info ]: Started model raw.stg_products
+16:34:15.859688 [debug]: Started rendering model raw.stg_products
+16:34:15.859705 [info ]: Started model raw.stg_orders
+16:34:15.859721 [debug]: Started rendering model raw.stg_orders
+16:34:15.859739 [info ]: Started model raw.stg_order_items
+16:34:15.859753 [debug]: Started rendering model raw.stg_order_items
+16:34:15.860104 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:15.860129 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+16:34:15.860136 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+16:34:15.860185 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:15.860215 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+16:34:15.860249 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+16:34:15.860265 [info ]:  Succeeded [-------] model raw.stg_products (view)
+16:34:15.860284 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+16:34:15.860295 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+16:34:15.860486 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:34:15.860560 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+16:34:15.860583 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+16:34:15.860585 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+16:34:15.860634 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+16:34:15.860650 [info ]: Finished rendering [  0.00s] (5 nodes, 0 skipped, 0 errors)
+16:34:15.860657 [info ]:  Succeeded [-------] model raw.sales_by_category (table)
+16:34:15.863515 [info ]: Started scheduling
+16:34:15.863578 [info ]: Finished scheduling [  0.00s]
+16:34:15.863703 [info ]: Cached model count updated: 7 models (accurate)
+16:34:16.071165 [info ]: Started loading project
+16:34:16.071876 [info ]: Loading profiles.yml
+16:34:16.081773 [info ]: Started parsing
+16:34:16.154159 [info ]: Finished loading project [  0.08s]
+16:34:16.156767 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+16:34:16.308306 [info ]: Finished parsing [  0.23s]
+16:34:16.314193 [info ]: Cached model count updated: 7 models (accurate)
+16:34:16.346088 [info ]: Started loading project
+16:34:16.346669 [info ]: Loading profiles.yml
+16:34:16.355288 [info ]: Started parsing
+16:34:16.421359 [info ]: Finished loading project [  0.08s]
+16:34:16.424501 [info ]: Cached model count updated: 7 models (accurate)
+16:34:16.429063 [info ]: Finished parsing [  0.07s]
+16:34:16.456474 [info ]: Started loading project
+16:34:16.457163 [info ]: Loading profiles.yml
+16:34:16.466470 [info ]: Started parsing
+16:34:16.536763 [info ]: Finished loading project [  0.08s]
+16:34:16.539265 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+16:34:16.701926 [info ]: Finished parsing [  0.24s]
+16:34:16.704169 [info ]: Cached model count updated: 7 models (estimate)
+16:34:16.704187 [info ]: Cached model count updated: 7 models (accurate)
+16:34:16.704227 [info ]: Started scheduling
+16:34:16.704296 [info ]: Finished scheduling [  0.00s]
+16:34:16.704332 [debug]: Compilation - 1 nodes selected: {"model.analytics.sales_daily"}
+16:34:16.705528 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:16.705797 [info ]: Started building task graph
+16:34:16.705828 [info ]: Finished building task graph [  0.00s]
+16:34:16.708134 [info ]: Started rendering (1 nodes)
+16:34:16.708168 [info ]: Started model raw.sales_daily
+16:34:16.708259 [debug]: Started rendering model raw.sales_daily
+16:34:16.710197 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+16:34:16.710357 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+16:34:16.710389 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+16:34:16.710402 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+16:34:16.715750 [info ]: Started scheduling
+16:34:16.715857 [info ]: Finished scheduling [  0.00s]
+16:34:16.717490 [info ]: Cached model count updated: 7 models (accurate)
+16:34:16.974597 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:18.263326 [info ]: Started loading project
+16:34:18.264044 [info ]: Loading profiles.yml
+16:34:18.294378 [info ]: Cached model count updated: 7 models (estimate)
+16:34:18.294401 [info ]: Cached model count updated: 7 models (accurate)
+16:34:18.294425 [info ]: Started scheduling
+16:34:18.294487 [info ]: Finished scheduling [  0.00s]
+16:34:18.294504 [debug]: Compilation - 6 nodes selected: {"model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+16:34:18.295638 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:18.295970 [info ]: Started building task graph
+16:34:18.296038 [info ]: Finished building task graph [  0.00s]
+16:34:18.298049 [info ]: Started rendering (6 nodes)
+16:34:18.298077 [info ]: Started model raw.stg_customers
+16:34:18.298087 [debug]: Started rendering model raw.stg_customers
+16:34:18.298109 [info ]: Started model raw.sales_daily
+16:34:18.298116 [debug]: Started rendering model raw.sales_daily
+16:34:18.298126 [info ]: Started model raw.sales_by_category
+16:34:18.298133 [debug]: Started rendering model raw.sales_by_category
+16:34:18.298149 [info ]: Started model raw.stg_products
+16:34:18.298163 [debug]: Started rendering model raw.stg_products
+16:34:18.298178 [info ]: Started model raw.stg_orders
+16:34:18.298196 [debug]: Started rendering model raw.stg_orders
+16:34:18.298220 [info ]: Started model raw.stg_order_items
+16:34:18.298231 [debug]: Started rendering model raw.stg_order_items
+16:34:18.298187 [info ]: Finished loading project [  0.03s]
+16:34:18.298587 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:18.298588 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+16:34:18.298586 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+16:34:18.298602 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+16:34:18.298638 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+16:34:18.298669 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+16:34:18.298697 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+16:34:18.298727 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:18.298739 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+16:34:18.298764 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+16:34:18.298779 [info ]:  Succeeded [-------] model raw.stg_products (view)
+16:34:18.298803 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+16:34:18.298817 [info ]:  Succeeded [-------] model raw.sales_daily (table)
+16:34:18.298834 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+16:34:18.298847 [info ]:  Succeeded [-------] model raw.sales_by_category (table)
+16:34:18.298939 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:34:18.298998 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+16:34:18.299013 [info ]: Finished rendering [  0.00s] (6 nodes, 0 skipped, 0 errors)
+16:34:18.299024 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+16:34:18.302769 [info ]: Started scheduling
+16:34:18.302822 [info ]: Finished scheduling [  0.00s]
+16:34:18.302949 [info ]: Cached model count updated: 7 models (accurate)
+16:34:18.578076 [info ]: Started loading project
+16:34:18.578652 [info ]: Loading profiles.yml
+16:34:18.589334 [info ]: Started parsing
+16:34:18.672591 [info ]: Finished loading project [  0.09s]
+16:34:18.674958 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+16:34:18.835638 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_orders_items' not found in project. Searched for 'analytics.stg_orders_items, stg_orders_items'
+  --> models/marts/fct_orders.sql:7:6
+16:34:18.839678 [info ]: Cached model count updated: 7 models (estimate)
+16:34:18.839697 [info ]: Cached model count updated: 7 models (accurate)
+16:34:18.839720 [info ]: Started scheduling
+16:34:18.839783 [info ]: Finished scheduling [  0.00s]
+16:34:18.839799 [debug]: Compilation - 2 nodes selected: {"model.analytics.fct_orders", "model.analytics.stg_orders"}
+16:34:18.840577 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:18.840828 [info ]: Started building task graph
+16:34:18.840859 [info ]: Finished building task graph [  0.00s]
+16:34:18.842629 [info ]: Started rendering (2 nodes)
+16:34:18.842652 [info ]: Started model raw.fct_orders
+16:34:18.842661 [debug]: Started rendering model raw.fct_orders
+16:34:18.842689 [info ]: Started model raw.stg_orders
+16:34:18.842695 [debug]: Started rendering model raw.stg_orders
+16:34:18.842742 [info ]: Finished parsing [  0.25s]
+16:34:18.843097 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:18.843196 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:18.843223 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+16:34:18.846173 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: analytics, model: stg_orders_items, version: None
+(in models/marts/fct_orders.sql:7:6)
+  --> models/marts/fct_orders.sql:7:6
+16:34:18.846222 [info ]:     Failed [  0.00s] model raw.fct_orders (table)
+16:34:18.851164 [info ]: Started scheduling
+16:34:18.851275 [info ]: Finished scheduling [  0.00s]
+16:34:18.852664 [info ]: Cached model count updated: 7 models (accurate)
+16:34:18.852708 [debug]: Finished rendering [  0.01s] model raw.fct_orders [error]
+16:34:18.852729 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 1 errors)
+16:34:18.935871 [info ]: Started loading project
+16:34:18.936557 [info ]: Loading profiles.yml
+16:34:18.947195 [info ]: Started parsing
+16:34:19.035612 [info ]: Finished loading project [  0.10s]
+16:34:19.037983 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+16:34:19.186367 [error]: [DependencyNotFound (dbt1048)]: Ref 'stg_orders_items' not found in project. Searched for 'analytics.stg_orders_items, stg_orders_items'
+  --> models/marts/fct_orders.sql:7:6
+16:34:19.189898 [info ]: Cached model count updated: 7 models (estimate)
+16:34:19.189921 [info ]: Cached model count updated: 7 models (accurate)
+16:34:19.189953 [info ]: Started scheduling
+16:34:19.190037 [info ]: Finished scheduling [  0.00s]
+16:34:19.190056 [debug]: Compilation - 2 nodes selected: {"model.analytics.fct_orders", "model.analytics.stg_orders"}
+16:34:19.191358 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:19.191881 [info ]: Started building task graph
+16:34:19.191942 [info ]: Finished building task graph [  0.00s]
+16:34:19.194122 [info ]: Started rendering (2 nodes)
+16:34:19.194167 [info ]: Started model raw.fct_orders
+16:34:19.194176 [debug]: Started rendering model raw.fct_orders
+16:34:19.194202 [info ]: Started model raw.stg_orders
+16:34:19.194215 [debug]: Started rendering model raw.stg_orders
+16:34:19.194249 [info ]: Finished parsing [  0.25s]
+16:34:19.194655 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:19.194745 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:19.194769 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+16:34:19.194951 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: analytics, model: stg_orders_items, version: None
+(in models/marts/fct_orders.sql:7:6)
+  --> models/marts/fct_orders.sql:7:6
+16:34:19.194975 [info ]:     Failed [-------] model raw.fct_orders (table)
+16:34:19.198357 [info ]: Started scheduling
+16:34:19.198483 [info ]: Finished scheduling [  0.00s]
+16:34:19.200323 [info ]: Cached model count updated: 7 models (accurate)
+16:34:19.200373 [debug]: Finished rendering [  0.01s] model raw.fct_orders [error]
+16:34:19.200394 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 1 errors)
+16:34:19.474244 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:20.754168 [info ]: Started loading project
+16:34:20.754903 [info ]: Loading profiles.yml
+16:34:20.781788 [info ]: Cached model count updated: 7 models (estimate)
+16:34:20.781811 [info ]: Cached model count updated: 7 models (accurate)
+16:34:20.781836 [info ]: Started scheduling
+16:34:20.781908 [info ]: Finished scheduling [  0.00s]
+16:34:20.781921 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+16:34:20.782915 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:20.783247 [info ]: Started building task graph
+16:34:20.783306 [info ]: Finished building task graph [  0.00s]
+16:34:20.785424 [info ]: Started rendering (7 nodes)
+16:34:20.785457 [info ]: Started model raw.stg_customers
+16:34:20.785472 [debug]: Started rendering model raw.stg_customers
+16:34:20.785504 [info ]: Started model raw.sales_daily
+16:34:20.785518 [debug]: Started rendering model raw.sales_daily
+16:34:20.785531 [info ]: Finished loading project [  0.03s]
+16:34:20.785536 [info ]: Started model raw.sales_by_category
+16:34:20.785547 [debug]: Started rendering model raw.sales_by_category
+16:34:20.785570 [info ]: Started model raw.stg_products
+16:34:20.785582 [debug]: Started rendering model raw.stg_products
+16:34:20.785597 [info ]: Started model raw.stg_order_items
+16:34:20.785605 [debug]: Started rendering model raw.stg_order_items
+16:34:20.785625 [info ]: Started model raw.fct_orders
+16:34:20.785634 [debug]: Started rendering model raw.fct_orders
+16:34:20.785673 [info ]: Started model raw.stg_orders
+16:34:20.785691 [debug]: Started rendering model raw.stg_orders
+16:34:20.786034 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+16:34:20.786036 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:34:20.786139 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+16:34:20.786161 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+16:34:20.786202 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+16:34:20.786215 [info ]:  Succeeded [-------] model raw.sales_daily (table)
+16:34:20.786381 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:20.786399 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+16:34:20.786455 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:20.786477 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+16:34:20.786483 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+16:34:20.786504 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+16:34:20.786518 [info ]:  Succeeded [-------] model raw.sales_by_category (table)
+16:34:20.786572 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: ref not found for package: analytics, model: stg_orders_items, version: None
+(in models/marts/fct_orders.sql:7:6)
+  --> models/marts/fct_orders.sql:7:6
+16:34:20.786592 [info ]:     Failed [-------] model raw.fct_orders (table)
+16:34:20.786597 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+16:34:20.786621 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+16:34:20.786633 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+16:34:20.786692 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+16:34:20.786706 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+16:34:20.791465 [info ]: Started scheduling
+16:34:20.791512 [info ]: Finished scheduling [  0.00s]
+16:34:20.791677 [info ]: Cached model count updated: 7 models (accurate)
+16:34:20.791682 [debug]: Finished rendering [  0.01s] model raw.fct_orders [error]
+16:34:20.791698 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 1 errors)
+16:34:21.049225 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:31.088649 [info ]: Started loading project
+16:34:31.089347 [info ]: Loading profiles.yml
+16:34:31.101035 [info ]: Started parsing
+16:34:31.192824 [info ]: Finished loading project [  0.10s]
+16:34:31.195275 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+16:34:31.340502 [info ]: Finished parsing [  0.24s]
+16:34:31.343982 [info ]: Cached model count updated: 7 models (estimate)
+16:34:31.344006 [info ]: Cached model count updated: 7 models (accurate)
+16:34:31.344040 [info ]: Started scheduling
+16:34:31.344140 [info ]: Finished scheduling [  0.00s]
+16:34:31.344163 [debug]: Compilation - 3 nodes selected: {"model.analytics.fct_orders", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+16:34:31.345368 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:31.345670 [info ]: Started building task graph
+16:34:31.345717 [info ]: Finished building task graph [  0.00s]
+16:34:31.347593 [info ]: Started rendering (3 nodes)
+16:34:31.347624 [info ]: Started model raw.fct_orders
+16:34:31.347639 [debug]: Started rendering model raw.fct_orders
+16:34:31.347672 [info ]: Started model raw.stg_orders
+16:34:31.347687 [debug]: Started rendering model raw.stg_orders
+16:34:31.347722 [info ]: Started model raw.stg_order_items
+16:34:31.347741 [debug]: Started rendering model raw.stg_order_items
+16:34:31.348099 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:31.348197 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:31.348225 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+16:34:31.348488 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:34:31.348572 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+16:34:31.348597 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+16:34:31.349820 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+16:34:31.350014 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+16:34:31.350048 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 0 errors)
+16:34:31.350061 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+16:34:31.354363 [info ]: Started scheduling
+16:34:31.354486 [info ]: Finished scheduling [  0.00s]
+16:34:31.356075 [info ]: Cached model count updated: 7 models (accurate)
+16:34:31.634763 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:32.913036 [info ]: Started loading project
+16:34:32.913607 [info ]: Loading profiles.yml
+16:34:32.950140 [info ]: Cached model count updated: 7 models (estimate)
+16:34:32.950169 [info ]: Cached model count updated: 7 models (accurate)
+16:34:32.950205 [info ]: Started scheduling
+16:34:32.950311 [info ]: Finished scheduling [  0.00s]
+16:34:32.950333 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+16:34:32.951401 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:32.951755 [info ]: Started building task graph
+16:34:32.951807 [info ]: Finished building task graph [  0.00s]
+16:34:32.953909 [info ]: Started rendering (7 nodes)
+16:34:32.953935 [info ]: Started model raw.stg_customers
+16:34:32.953945 [debug]: Started rendering model raw.stg_customers
+16:34:32.953968 [info ]: Started model raw.sales_daily
+16:34:32.953974 [debug]: Started rendering model raw.sales_daily
+16:34:32.953984 [info ]: Started model raw.sales_by_category
+16:34:32.953991 [debug]: Started rendering model raw.sales_by_category
+16:34:32.954005 [info ]: Started model raw.stg_products
+16:34:32.954016 [debug]: Started rendering model raw.stg_products
+16:34:32.954031 [info ]: Started model raw.fct_orders
+16:34:32.954041 [debug]: Started rendering model raw.fct_orders
+16:34:32.954039 [info ]: Finished loading project [  0.04s]
+16:34:32.954059 [info ]: Started model raw.stg_orders
+16:34:32.954068 [debug]: Started rendering model raw.stg_orders
+16:34:32.954083 [info ]: Started model raw.stg_order_items
+16:34:32.954092 [debug]: Started rendering model raw.stg_order_items
+16:34:32.954478 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+16:34:32.954479 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+16:34:32.954483 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+16:34:32.954577 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+16:34:32.954603 [info ]:  Succeeded [-------] model raw.sales_by_category (table)
+16:34:32.954632 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+16:34:32.954644 [info ]:  Succeeded [-------] model raw.sales_daily (table)
+16:34:32.954744 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+16:34:32.954758 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+16:34:32.954880 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+16:34:32.954949 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+16:34:32.954959 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+16:34:32.954967 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+16:34:32.955001 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+16:34:32.955011 [info ]:  Succeeded [-------] model raw.stg_products (view)
+16:34:32.955291 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+16:34:32.955290 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+16:34:32.955384 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+16:34:32.955414 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+16:34:32.955448 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+16:34:32.955462 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+16:34:32.955472 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+16:34:32.959405 [info ]: Started scheduling
+16:34:32.959462 [info ]: Finished scheduling [  0.00s]
+16:34:32.959577 [info ]: Cached model count updated: 7 models (accurate)
+16:34:33.212753 [debug]: License check failed: Feature not licensed: 'lineage'
+16:34:33.757428 [debug]: License check failed: Feature not licensed: 'lineage'
+16:41:56.246151 [debug]: License check failed: Feature not licensed: 'lineage'

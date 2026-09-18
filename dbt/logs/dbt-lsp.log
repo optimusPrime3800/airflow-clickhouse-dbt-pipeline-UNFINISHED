@@ -1,0 +1,2011 @@
+==================== 2026-08-26T07:39:43.636663Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-08-26T07:39:43.637243Z | 4e0ad74d-4e82-4a49-941a-92bdbf3bb6dc ====================
+07:39:43.637313 [info ]: Starting dbt LSP server
+07:39:43.637384 [info ]: Connecting to LSP client on port 8000
+07:39:43.641419 [info ]: Successfully connected to LSP client
+07:39:43.641462 [info ]: Creating LSP service...
+07:39:43.644439 [info ]: Creating LSP server...
+07:39:43.644472 [info ]: Starting LSP server...
+07:39:44.445122 [info ]: Loading profiles.yml
+==================== 2026-08-26T07:39:44.598409Z | de67d457-7742-493b-90ea-e5610ac3418d ====================
+07:39:44.598619 [info ]: Started loading project
+07:39:44.600144 [info ]: Loading profiles.yml
+07:39:44.613104 [debug]:    Started loading packages
+07:39:44.619509 [debug]:     Loaded [  0.01s] packages
+07:39:44.621405 [info ]: Finished loading project [  0.02s]
+07:39:44.622211 [info ]: Started parsing
+07:39:44.695968 [debug]: Finished parsing models/marts/fct_orders.sql [  0.01s]
+07:39:44.697797 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+07:39:44.699217 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+07:39:44.700429 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+07:39:44.701741 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+07:39:44.702673 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+07:39:44.703645 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+07:39:44.963062 [info ]: Finished parsing [  0.34s]
+07:39:44.964238 [info ]: Cached model count updated: 7 models (estimate)
+07:39:44.964269 [info ]: Cached model count updated: 7 models (accurate)
+07:39:44.964399 [info ]: Started scheduling
+07:39:44.964829 [info ]: Finished scheduling [  0.00s]
+07:39:44.964883 [debug]: Compilation - 4 nodes selected: {"model.analytics.sales_by_category", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+07:39:44.964968 [info ]: Started scheduling
+07:39:44.965052 [info ]: Finished scheduling [  0.00s]
+07:39:44.968339 [info ]: Started building task graph
+07:39:44.968522 [info ]: Finished building task graph [  0.00s]
+07:39:44.973818 [info ]: Started rendering (4 nodes)
+07:39:44.973921 [info ]: Started model raw.sales_by_category
+07:39:44.973971 [debug]: Started rendering model raw.sales_by_category
+07:39:44.974052 [info ]: Started model raw.stg_products
+07:39:44.974078 [debug]: Started rendering model raw.stg_products
+07:39:44.974130 [info ]: Started model raw.stg_orders
+07:39:44.974145 [debug]: Started rendering model raw.stg_orders
+07:39:44.974212 [info ]: Started model raw.stg_order_items
+07:39:44.974228 [debug]: Started rendering model raw.stg_order_items
+07:39:44.978162 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+07:39:44.978516 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+07:39:44.978569 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+07:39:44.979923 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+07:39:44.980258 [debug]: Finished rendering [  0.01s] model raw.stg_orders [success]
+07:39:44.980289 [info ]:  Succeeded [  0.01s] model raw.stg_orders (view)
+07:39:44.980447 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+07:39:44.980455 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+07:39:44.980627 [debug]: Finished rendering [  0.01s] model raw.stg_products [success]
+07:39:44.980649 [info ]:  Succeeded [  0.01s] model raw.stg_products (view)
+07:39:44.980714 [debug]: Finished rendering [  0.01s] model raw.stg_order_items [success]
+07:39:44.980725 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+07:39:44.980741 [info ]:  Succeeded [  0.01s] model raw.stg_order_items (view)
+07:39:44.988234 [info ]: Started scheduling
+07:39:44.988302 [info ]: Finished scheduling [  0.00s]
+07:39:44.988596 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [390ms]
+Processed: 4 models
+Summary: 4 total | 4 success
+07:39:44.988788 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T07:39:47.001672Z | 932ceed8-1a88-44e1-877b-8de549d68129 ====================
+07:39:47.001782 [info ]: Started loading project
+07:39:47.002693 [info ]: Loading profiles.yml
+07:39:47.049379 [info ]: Cached model count updated: 7 models (estimate)
+07:39:47.049409 [info ]: Cached model count updated: 7 models (accurate)
+07:39:47.049447 [info ]: Started scheduling
+07:39:47.049578 [info ]: Finished scheduling [  0.00s]
+07:39:47.049608 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+07:39:47.052344 [info ]: Started building task graph
+07:39:47.052432 [info ]: Finished building task graph [  0.00s]
+07:39:47.055993 [info ]: Started rendering (7 nodes)
+07:39:47.056028 [info ]: Started model raw.stg_customers
+07:39:47.056042 [debug]: Started rendering model raw.stg_customers
+07:39:47.056075 [info ]: Started model raw.sales_daily
+07:39:47.056086 [debug]: Started rendering model raw.sales_daily
+07:39:47.056101 [info ]: Started model raw.sales_by_category
+07:39:47.056113 [debug]: Started rendering model raw.sales_by_category
+07:39:47.056140 [info ]: Started model raw.stg_products
+07:39:47.056149 [debug]: Started rendering model raw.stg_products
+07:39:47.056162 [info ]: Started model raw.fct_orders
+07:39:47.056170 [debug]: Started rendering model raw.fct_orders
+07:39:47.056184 [info ]: Started model raw.stg_orders
+07:39:47.056192 [debug]: Started rendering model raw.stg_orders
+07:39:47.056205 [info ]: Started model raw.stg_order_items
+07:39:47.056214 [debug]: Started rendering model raw.stg_order_items
+07:39:47.056252 [info ]: Finished loading project [  0.05s]
+07:39:47.059298 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+07:39:47.060101 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+07:39:47.060724 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+07:39:47.061723 [debug]: Finished rendering [  0.01s] model raw.stg_order_items [success]
+07:39:47.061710 [info ]:  Succeeded [  0.01s] model raw.stg_order_items (view)
+07:39:47.061764 [debug]: Finished rendering [  0.01s] model raw.stg_orders [success]
+07:39:47.061775 [info ]:  Succeeded [  0.01s] model raw.stg_orders (view)
+07:39:47.061797 [debug]: Finished rendering [  0.01s] model raw.sales_by_category [success]
+07:39:47.061805 [info ]:  Succeeded [  0.01s] model raw.sales_by_category (table)
+07:39:47.063634 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+07:39:47.063935 [debug]: Finished rendering [  0.01s] model raw.stg_customers [success]
+07:39:47.063970 [info ]:  Succeeded [  0.01s] model raw.stg_customers (view)
+07:39:47.065557 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+07:39:47.065801 [debug]: Finished rendering [  0.01s] model raw.sales_daily [success]
+07:39:47.065833 [info ]:  Succeeded [  0.01s] model raw.sales_daily (table)
+07:39:47.066129 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+07:39:47.066416 [debug]: Finished rendering [  0.01s] model raw.fct_orders [success]
+07:39:47.066445 [info ]:  Succeeded [  0.01s] model raw.fct_orders (table)
+07:39:47.067215 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+07:39:47.067333 [debug]: Finished rendering [  0.01s] model raw.stg_products [success]
+07:39:47.067360 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+07:39:47.067375 [info ]:  Succeeded [  0.01s] model raw.stg_products (view)
+07:39:47.076652 [info ]: Started scheduling
+07:39:47.076726 [info ]: Finished scheduling [  0.00s]
+07:39:47.076813 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [75ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+07:39:47.076962 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:08:49.865113Z | 3c0f2943-7066-4940-88a8-5525b2f33693 ====================
+08:08:49.865211 [info ]: Started loading project
+08:08:49.866390 [info ]: Loading profiles.yml
+08:08:49.882794 [info ]: Started parsing
+08:08:49.936883 [info ]: Finished loading project [  0.07s]
+08:08:49.939497 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+08:08:50.157090 [info ]: Finished parsing [  0.27s]
+08:08:50.160890 [info ]: Cached model count updated: 7 models (estimate)
+08:08:50.160917 [info ]: Cached model count updated: 7 models (accurate)
+08:08:50.160957 [info ]: Started scheduling
+08:08:50.161062 [info ]: Finished scheduling [  0.00s]
+08:08:50.161084 [debug]: Compilation - 4 nodes selected: {"model.analytics.sales_by_category", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+08:08:50.163539 [info ]: Started building task graph
+08:08:50.163613 [info ]: Finished building task graph [  0.00s]
+08:08:50.166474 [info ]: Started rendering (4 nodes)
+08:08:50.166512 [info ]: Started model raw.sales_by_category
+08:08:50.166527 [debug]: Started rendering model raw.sales_by_category
+08:08:50.166569 [info ]: Started model raw.stg_products
+08:08:50.166582 [debug]: Started rendering model raw.stg_products
+08:08:50.166605 [info ]: Started model raw.stg_orders
+08:08:50.166618 [debug]: Started rendering model raw.stg_orders
+08:08:50.166635 [info ]: Started model raw.stg_order_items
+08:08:50.166646 [debug]: Started rendering model raw.stg_order_items
+08:08:50.167765 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+08:08:50.167836 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+08:08:50.167885 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+08:08:50.167909 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+08:08:50.167967 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+08:08:50.167980 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+08:08:50.167994 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+08:08:50.168177 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+08:08:50.168204 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+08:08:50.169826 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+08:08:50.170176 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+08:08:50.170204 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+08:08:50.170217 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+08:08:50.177462 [info ]: Started scheduling
+08:08:50.177560 [info ]: Finished scheduling [  0.00s]
+08:08:50.178508 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [313ms]
+Processed: 4 models
+Summary: 4 total | 4 success
+08:08:50.178951 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:08:51.726933Z | 62dd85c5-8302-4fc5-b866-0d1db1fb6ebd ====================
+08:08:51.727031 [info ]: Started loading project
+08:08:51.728027 [info ]: Loading profiles.yml
+08:08:51.762395 [info ]: Cached model count updated: 7 models (estimate)
+08:08:51.762423 [info ]: Cached model count updated: 7 models (accurate)
+08:08:51.762452 [info ]: Started scheduling
+08:08:51.762556 [info ]: Finished scheduling [  0.00s]
+08:08:51.762580 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+08:08:51.763870 [info ]: Started building task graph
+08:08:51.763924 [info ]: Finished building task graph [  0.00s]
+08:08:51.766435 [info ]: Started rendering (7 nodes)
+08:08:51.766464 [info ]: Started model raw.stg_customers
+08:08:51.766473 [debug]: Started rendering model raw.stg_customers
+08:08:51.766497 [info ]: Started model raw.sales_daily
+08:08:51.766506 [debug]: Started rendering model raw.sales_daily
+08:08:51.766521 [info ]: Started model raw.sales_by_category
+08:08:51.766529 [debug]: Started rendering model raw.sales_by_category
+08:08:51.766548 [info ]: Started model raw.stg_products
+08:08:51.766557 [debug]: Started rendering model raw.stg_products
+08:08:51.766577 [info ]: Started model raw.fct_orders
+08:08:51.766576 [info ]: Finished loading project [  0.04s]
+08:08:51.766586 [debug]: Started rendering model raw.fct_orders
+08:08:51.766601 [info ]: Started model raw.stg_orders
+08:08:51.766611 [debug]: Started rendering model raw.stg_orders
+08:08:51.766636 [info ]: Started model raw.stg_order_items
+08:08:51.766647 [debug]: Started rendering model raw.stg_order_items
+08:08:51.767343 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+08:08:51.767374 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+08:08:51.767452 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+08:08:51.767493 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+08:08:51.767517 [info ]:  Succeeded [-------] model raw.stg_products (view)
+08:08:51.767544 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+08:08:51.767556 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+08:08:51.767574 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+08:08:51.767592 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+08:08:51.767695 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+08:08:51.767730 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+08:08:51.767757 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+08:08:51.767768 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+08:08:51.767801 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+08:08:51.767815 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+08:08:51.767816 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+08:08:51.767833 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+08:08:51.767842 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+08:08:51.767871 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+08:08:51.767881 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+08:08:51.768043 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+08:08:51.768443 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+08:08:51.773065 [info ]: Started scheduling
+08:08:51.773134 [info ]: Finished scheduling [  0.00s]
+08:08:51.773206 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [46ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+08:08:51.773339 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:32:14.820074Z | 50599d3b-9098-41a7-b5aa-c6297c8738e2 ====================
+08:32:14.820234 [info ]: Started loading project
+08:32:14.821070 [info ]: Loading profiles.yml
+08:32:14.835013 [info ]: Started parsing
+08:32:14.906982 [info ]: Finished loading project [  0.09s]
+08:32:14.909692 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+08:32:15.106643 [info ]: Finished parsing [  0.27s]
+08:32:15.116947 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [296ms]
+08:32:15.117065 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:32:15.182888Z | e32508c1-816e-4d4d-8cbb-ee696627d245 ====================
+08:32:15.182972 [info ]: Started loading project
+08:32:15.183810 [info ]: Loading profiles.yml
+08:32:15.195243 [info ]: Started parsing
+08:32:15.261949 [info ]: Finished loading project [  0.08s]
+08:32:15.266971 [info ]: Cached model count updated: 7 models (accurate)
+08:32:15.274105 [info ]: Finished parsing [  0.08s]
+08:32:15.274152 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [91ms]
+==================== 2026-08-26T08:32:15.323029Z | b0623fad-39d1-499a-a682-70218db7fb26 ====================
+08:32:15.323164 [info ]: Started loading project
+08:32:15.323984 [info ]: Loading profiles.yml
+08:32:15.336944 [info ]: Started parsing
+08:32:15.413346 [info ]: Finished loading project [  0.09s]
+08:32:15.416512 [info ]: Cached model count updated: 7 models (accurate)
+08:32:15.424587 [info ]: Finished parsing [  0.09s]
+08:32:15.424631 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [101ms]
+==================== 2026-08-26T08:32:15.459661Z | a6d1bba7-c3a3-47d9-ae33-671cb5ca4e33 ====================
+08:32:15.459770 [info ]: Started loading project
+08:32:15.460488 [info ]: Loading profiles.yml
+08:32:15.471792 [info ]: Started parsing
+08:32:15.543208 [info ]: Finished loading project [  0.08s]
+08:32:15.546558 [info ]: Cached model count updated: 7 models (accurate)
+08:32:15.553972 [info ]: Finished parsing [  0.08s]
+08:32:15.554015 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [94ms]
+==================== 2026-08-26T08:32:15.586067Z | 193d20fc-c483-45ac-95a6-dfb26d0245db ====================
+08:32:15.586149 [info ]: Started loading project
+08:32:15.586709 [info ]: Loading profiles.yml
+08:32:15.599284 [info ]: Started parsing
+08:32:15.683585 [info ]: Finished loading project [  0.10s]
+08:32:15.695698 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.01s]
+08:32:15.889293 [info ]: Finished parsing [  0.29s]
+08:32:15.899514 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [313ms]
+08:32:15.899641 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:32:15.942751Z | 425015b0-7acc-4bfd-8f29-216ee2036b0d ====================
+08:32:15.942829 [info ]: Started loading project
+08:32:15.943469 [info ]: Loading profiles.yml
+08:32:15.952899 [info ]: Started parsing
+08:32:16.030072 [info ]: Finished loading project [  0.09s]
+08:32:16.033901 [info ]: Cached model count updated: 7 models (accurate)
+08:32:16.041443 [info ]: Finished parsing [  0.09s]
+08:32:16.041484 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [98ms]
+==================== 2026-08-26T08:32:16.081241Z | 67367409-d133-4b97-bb61-08ede80349ec ====================
+08:32:16.081344 [info ]: Started loading project
+08:32:16.082230 [info ]: Loading profiles.yml
+08:32:16.095011 [info ]: Started parsing
+08:32:16.226226 [info ]: Finished loading project [  0.14s]
+08:32:16.232761 [info ]: Cached model count updated: 7 models (accurate)
+08:32:16.239506 [info ]: Finished parsing [  0.14s]
+08:32:16.239549 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [158ms]
+==================== 2026-08-26T08:32:16.290858Z | 2371bf75-0de8-4a28-b5d4-906928c521f2 ====================
+08:32:16.290954 [info ]: Started loading project
+08:32:16.291878 [info ]: Loading profiles.yml
+08:32:16.305945 [info ]: Started parsing
+08:32:16.391376 [info ]: Finished loading project [  0.10s]
+08:32:16.395360 [info ]: Cached model count updated: 7 models (accurate)
+08:32:16.404099 [info ]: Finished parsing [  0.10s]
+08:32:16.404146 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [113ms]
+==================== 2026-08-26T08:32:16.441676Z | 3fcdee12-6c1d-4d1a-8073-685a6c2345bc ====================
+08:32:16.441765 [info ]: Started loading project
+08:32:16.442322 [info ]: Loading profiles.yml
+08:32:16.451223 [info ]: Started parsing
+08:32:16.522037 [info ]: Finished loading project [  0.08s]
+08:32:16.524880 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+08:32:16.712316 [info ]: Finished parsing [  0.26s]
+08:32:16.715911 [info ]: Cached model count updated: 7 models (estimate)
+08:32:16.715939 [info ]: Cached model count updated: 7 models (accurate)
+08:32:16.716004 [info ]: Started scheduling
+08:32:16.716201 [info ]: Finished scheduling [  0.00s]
+08:32:16.716243 [debug]: Compilation - 4 nodes selected: {"model.analytics.sales_by_category", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+08:32:16.717740 [info ]: Started building task graph
+08:32:16.717815 [info ]: Finished building task graph [  0.00s]
+08:32:16.729379 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [287ms]
+Processed: 4 models
+08:32:16.729528 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:32:16.775356Z | 4effc09a-71a1-4a6a-a25e-e88168c98741 ====================
+08:32:16.775444 [info ]: Started loading project
+08:32:16.776205 [info ]: Loading profiles.yml
+08:32:16.787363 [info ]: Started parsing
+08:32:16.854914 [info ]: Finished loading project [  0.08s]
+08:32:16.858069 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+08:32:17.034013 [info ]: Finished parsing [  0.25s]
+08:32:17.043087 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [267ms]
+08:32:17.043184 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:32:17.081147Z | 6e85c597-8962-4df2-ba54-23e07b1b687b ====================
+08:32:17.081239 [info ]: Started loading project
+08:32:17.082144 [info ]: Loading profiles.yml
+08:32:17.091654 [info ]: Started parsing
+08:32:17.171092 [info ]: Finished loading project [  0.09s]
+08:32:17.173815 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+08:32:17.386421 [info ]: Finished parsing [  0.29s]
+08:32:17.389385 [info ]: Cached model count updated: 7 models (estimate)
+08:32:17.389413 [info ]: Cached model count updated: 7 models (accurate)
+08:32:17.389447 [info ]: Started scheduling
+08:32:17.389559 [info ]: Finished scheduling [  0.00s]
+08:32:17.389617 [debug]: Compilation - 4 nodes selected: {"model.analytics.sales_by_category", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+08:32:17.392512 [info ]: Started building task graph
+08:32:17.392682 [info ]: Finished building task graph [  0.00s]
+08:32:17.395811 [info ]: Started rendering (4 nodes)
+08:32:17.395935 [info ]: Started model raw.sales_by_category
+08:32:17.395997 [debug]: Started rendering model raw.sales_by_category
+08:32:17.396068 [info ]: Started model raw.stg_products
+08:32:17.396130 [debug]: Started rendering model raw.stg_products
+08:32:17.396383 [info ]: Started model raw.stg_orders
+08:32:17.396463 [debug]: Started rendering model raw.stg_orders
+08:32:17.396751 [info ]: Started model raw.stg_order_items
+08:32:17.396816 [debug]: Started rendering model raw.stg_order_items
+08:32:17.398329 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+08:32:17.398605 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+08:32:17.398671 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+08:32:17.410041 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+08:32:17.414273 [debug]: Finished rendering [  0.02s] model raw.stg_products [success]
+08:32:17.414312 [info ]:  Succeeded [  0.02s] model raw.stg_products (view)
+08:32:17.414794 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+08:32:17.415046 [debug]: Finished rendering [  0.02s] model raw.stg_order_items [success]
+08:32:17.415073 [info ]:  Succeeded [  0.02s] model raw.stg_order_items (view)
+08:32:17.416935 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+08:32:17.417067 [debug]: Finished rendering [  0.02s] model raw.stg_orders [success]
+08:32:17.417093 [info ]: Finished rendering [  0.02s] (4 nodes, 0 skipped, 0 errors)
+08:32:17.417107 [info ]:  Succeeded [  0.02s] model raw.stg_orders (view)
+08:32:17.423914 [info ]: Started scheduling
+08:32:17.424035 [info ]: Finished scheduling [  0.00s]
+08:32:17.425334 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [344ms]
+Processed: 4 models
+Summary: 4 total | 4 success
+08:32:17.425625 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:32:18.939861Z | 3edaf65f-3ac3-4466-a063-9b51d0d7161b ====================
+08:32:18.939940 [info ]: Started loading project
+08:32:18.940543 [info ]: Loading profiles.yml
+08:32:18.952015 [info ]: Started parsing
+08:32:19.050324 [info ]: Finished loading project [  0.11s]
+08:32:19.055180 [info ]: Cached model count updated: 7 models (accurate)
+08:32:19.061976 [info ]: Finished parsing [  0.11s]
+08:32:19.062021 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [122ms]
+==================== 2026-08-26T08:32:19.096333Z | de86ab2b-30d5-4fbd-ad3c-cfca2e187d36 ====================
+08:32:19.096404 [info ]: Started loading project
+08:32:19.096936 [info ]: Loading profiles.yml
+08:32:19.110032 [info ]: Started parsing
+08:32:19.205872 [info ]: Finished loading project [  0.11s]
+08:32:19.208683 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+08:32:19.384071 [info ]: Finished parsing [  0.27s]
+08:32:19.393311 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [296ms]
+08:32:19.393431 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:32:19.439846Z | 9b26c056-5d4a-48a2-b967-b3ef5e4bd692 ====================
+08:32:19.439925 [info ]: Started loading project
+08:32:19.440769 [info ]: Loading profiles.yml
+08:32:19.454216 [info ]: Started parsing
+08:32:19.535859 [info ]: Finished loading project [  0.10s]
+08:32:19.538466 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+08:32:19.734427 [info ]: Finished parsing [  0.28s]
+08:32:19.738488 [info ]: Cached model count updated: 7 models (estimate)
+08:32:19.738511 [info ]: Cached model count updated: 7 models (accurate)
+08:32:19.738540 [info ]: Started scheduling
+08:32:19.738610 [info ]: Finished scheduling [  0.00s]
+08:32:19.738628 [debug]: Compilation - 3 nodes selected: {"model.analytics.fct_orders", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+08:32:19.740036 [info ]: Started building task graph
+08:32:19.740082 [info ]: Finished building task graph [  0.00s]
+08:32:19.743753 [info ]: Started rendering (3 nodes)
+08:32:19.743795 [info ]: Started model raw.fct_orders
+08:32:19.743810 [debug]: Started rendering model raw.fct_orders
+08:32:19.743997 [info ]: Started model raw.stg_orders
+08:32:19.744036 [debug]: Started rendering model raw.stg_orders
+08:32:19.744060 [info ]: Started model raw.stg_order_items
+08:32:19.744070 [debug]: Started rendering model raw.stg_order_items
+08:32:19.744489 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+08:32:19.744502 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+08:32:19.744617 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+08:32:19.744645 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+08:32:19.744694 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+08:32:19.744719 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+08:32:19.746533 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+08:32:19.746748 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+08:32:19.746779 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 0 errors)
+08:32:19.746795 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+08:32:19.753603 [info ]: Started scheduling
+08:32:19.753738 [info ]: Finished scheduling [  0.00s]
+08:32:19.754680 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [314ms]
+Processed: 3 models
+Summary: 3 total | 3 success
+08:32:19.754929 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:32:21.349526Z | 94948200-d4cc-45e2-ada5-38a626f7866f ====================
+08:32:21.349635 [info ]: Started loading project
+08:32:21.350833 [info ]: Loading profiles.yml
+08:32:21.461924 [info ]: Cached model count updated: 7 models (estimate)
+08:32:21.461953 [info ]: Cached model count updated: 7 models (accurate)
+08:32:21.462017 [info ]: Started scheduling
+08:32:21.462160 [info ]: Finished scheduling [  0.00s]
+08:32:21.462186 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+08:32:21.464939 [info ]: Started building task graph
+08:32:21.465034 [info ]: Finished building task graph [  0.00s]
+08:32:21.476384 [info ]: Started rendering (7 nodes)
+08:32:21.476428 [info ]: Started model raw.stg_customers
+08:32:21.476446 [debug]: Started rendering model raw.stg_customers
+08:32:21.476481 [info ]: Started model raw.sales_daily
+08:32:21.476491 [debug]: Started rendering model raw.sales_daily
+08:32:21.476510 [info ]: Started model raw.sales_by_category
+08:32:21.476519 [debug]: Started rendering model raw.sales_by_category
+08:32:21.476536 [info ]: Started model raw.stg_products
+08:32:21.476546 [debug]: Started rendering model raw.stg_products
+08:32:21.476562 [info ]: Started model raw.fct_orders
+08:32:21.476571 [debug]: Started rendering model raw.fct_orders
+08:32:21.476587 [info ]: Started model raw.stg_orders
+08:32:21.476595 [debug]: Started rendering model raw.stg_orders
+08:32:21.476611 [info ]: Started model raw.stg_order_items
+08:32:21.476620 [debug]: Started rendering model raw.stg_order_items
+08:32:21.476659 [info ]: Finished loading project [  0.13s]
+08:32:21.479286 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+08:32:21.480472 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+08:32:21.485834 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+08:32:21.485935 [debug]: Finished rendering [  0.01s] model raw.sales_by_category [success]
+08:32:21.485964 [info ]:  Succeeded [  0.01s] model raw.sales_by_category (table)
+08:32:21.486503 [debug]: Finished rendering [  0.01s] model raw.stg_products [success]
+08:32:21.486539 [info ]:  Succeeded [  0.01s] model raw.stg_products (view)
+08:32:21.486719 [debug]: Finished rendering [  0.01s] model raw.stg_orders [success]
+08:32:21.486737 [info ]:  Succeeded [  0.01s] model raw.stg_orders (view)
+08:32:21.493447 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+08:32:21.499378 [debug]: Finished rendering [  0.02s] model raw.stg_customers [success]
+08:32:21.499467 [info ]:  Succeeded [  0.02s] model raw.stg_customers (view)
+08:32:21.500378 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+08:32:21.500785 [debug]: Finished rendering [  0.02s] model raw.stg_order_items [success]
+08:32:21.500820 [info ]:  Succeeded [  0.02s] model raw.stg_order_items (view)
+08:32:21.501396 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+08:32:21.506260 [debug]: Finished rendering [  0.03s] model raw.fct_orders [success]
+08:32:21.506299 [info ]:  Succeeded [  0.03s] model raw.fct_orders (table)
+08:32:21.511451 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+08:32:21.513582 [debug]: Finished rendering [  0.04s] model raw.sales_daily [success]
+08:32:21.513626 [info ]: Finished rendering [  0.04s] (7 nodes, 0 skipped, 0 errors)
+08:32:21.513680 [info ]:  Succeeded [  0.04s] model raw.sales_daily (table)
+08:32:21.539554 [info ]: Started scheduling
+08:32:21.539627 [info ]: Finished scheduling [  0.00s]
+08:32:21.539728 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [190ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+08:32:21.539878 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:33:12.311120Z | 47828e39-860c-42b7-af9e-2bb24b429cc2 ====================
+08:33:12.311211 [info ]: Started loading project
+08:33:12.312156 [info ]: Loading profiles.yml
+08:33:12.326081 [info ]: Started parsing
+08:33:12.428793 [info ]: Finished loading project [  0.12s]
+08:33:12.433053 [info ]: Cached model count updated: 7 models (accurate)
+08:33:12.441188 [info ]: Finished parsing [  0.12s]
+08:33:12.441235 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [130ms]
+==================== 2026-08-26T08:33:12.507781Z | 200e9a93-8733-4457-a43d-709499fa709a ====================
+08:33:12.507874 [info ]: Started loading project
+08:33:12.508701 [info ]: Loading profiles.yml
+08:33:12.522885 [info ]: Started parsing
+08:33:12.684932 [info ]: Finished loading project [  0.18s]
+08:33:12.688692 [info ]: Cached model count updated: 7 models (accurate)
+08:33:12.697353 [info ]: Finished parsing [  0.17s]
+08:33:12.697525 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [189ms]
+==================== 2026-08-26T08:33:12.730455Z | d822b660-126d-41ae-8dca-70117a90c4f5 ====================
+08:33:12.730547 [info ]: Started loading project
+08:33:12.731178 [info ]: Loading profiles.yml
+08:33:12.743094 [info ]: Started parsing
+08:33:12.843405 [info ]: Finished loading project [  0.11s]
+08:33:12.847426 [info ]: Cached model count updated: 7 models (accurate)
+08:33:12.854564 [info ]: Finished parsing [  0.11s]
+08:33:12.854604 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [124ms]
+==================== 2026-08-26T08:33:12.889376Z | fd0c6513-4e5d-4fd9-975d-2d1e740c25da ====================
+08:33:12.889473 [info ]: Started loading project
+08:33:12.890353 [info ]: Loading profiles.yml
+08:33:12.904823 [info ]: Started parsing
+08:33:13.011183 [info ]: Finished loading project [  0.12s]
+08:33:13.015073 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+08:33:13.229229 [info ]: Finished parsing [  0.32s]
+08:33:13.232948 [info ]: Cached model count updated: 7 models (estimate)
+08:33:13.232977 [info ]: Cached model count updated: 7 models (accurate)
+08:33:13.233018 [info ]: Started scheduling
+08:33:13.233141 [info ]: Finished scheduling [  0.00s]
+08:33:13.233164 [debug]: Compilation - 4 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_daily", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+08:33:13.234483 [info ]: Started building task graph
+08:33:13.234550 [info ]: Finished building task graph [  0.00s]
+08:33:13.237675 [info ]: Started rendering (4 nodes)
+08:33:13.237714 [info ]: Started model raw.sales_daily
+08:33:13.237726 [debug]: Started rendering model raw.sales_daily
+08:33:13.237753 [info ]: Started model raw.fct_orders
+08:33:13.237764 [debug]: Started rendering model raw.fct_orders
+08:33:13.237781 [info ]: Started model raw.stg_orders
+08:33:13.237791 [debug]: Started rendering model raw.stg_orders
+08:33:13.237817 [info ]: Started model raw.stg_order_items
+08:33:13.237831 [debug]: Started rendering model raw.stg_order_items
+08:33:13.238201 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+08:33:13.238328 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+08:33:13.238361 [info ]:  Succeeded [-------] model raw.fct_orders (table)
+08:33:13.238668 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+08:33:13.238771 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+08:33:13.238802 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+08:33:13.239521 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+08:33:13.239861 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+08:33:13.240024 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+08:33:13.240056 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+08:33:13.240160 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+08:33:13.240178 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+08:33:13.240189 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+08:33:13.246255 [info ]: Started scheduling
+08:33:13.246369 [info ]: Finished scheduling [  0.00s]
+08:33:13.247156 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [357ms]
+Processed: 4 models
+Summary: 4 total | 4 success
+08:33:13.247285 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T08:33:14.809829Z | 2106e796-d1c5-4873-8c89-11c2855737ee ====================
+08:33:14.809912 [info ]: Started loading project
+08:33:14.810594 [info ]: Loading profiles.yml
+08:33:14.846404 [info ]: Cached model count updated: 7 models (estimate)
+08:33:14.846427 [info ]: Cached model count updated: 7 models (accurate)
+08:33:14.846456 [info ]: Started scheduling
+08:33:14.846532 [info ]: Finished scheduling [  0.00s]
+08:33:14.846552 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+08:33:14.847781 [info ]: Started building task graph
+08:33:14.847851 [info ]: Finished building task graph [  0.00s]
+08:33:14.851319 [info ]: Started rendering (7 nodes)
+08:33:14.851352 [info ]: Started model raw.stg_customers
+08:33:14.851366 [debug]: Started rendering model raw.stg_customers
+08:33:14.851399 [info ]: Started model raw.sales_daily
+08:33:14.851413 [debug]: Started rendering model raw.sales_daily
+08:33:14.851429 [info ]: Started model raw.sales_by_category
+08:33:14.851429 [info ]: Finished loading project [  0.04s]
+08:33:14.851437 [debug]: Started rendering model raw.sales_by_category
+08:33:14.851449 [info ]: Started model raw.stg_products
+08:33:14.851457 [debug]: Started rendering model raw.stg_products
+08:33:14.851473 [info ]: Started model raw.fct_orders
+08:33:14.851493 [debug]: Started rendering model raw.fct_orders
+08:33:14.851507 [info ]: Started model raw.stg_orders
+08:33:14.851515 [debug]: Started rendering model raw.stg_orders
+08:33:14.851529 [info ]: Started model raw.stg_order_items
+08:33:14.851538 [debug]: Started rendering model raw.stg_order_items
+08:33:14.852212 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+08:33:14.852226 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+08:33:14.852441 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+08:33:14.852507 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+08:33:14.852531 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+08:33:14.852575 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+08:33:14.852588 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+08:33:14.852629 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+08:33:14.852640 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+08:33:14.852689 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+08:33:14.852708 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+08:33:14.852803 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+08:33:14.852809 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+08:33:14.852823 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+08:33:14.852863 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+08:33:14.852878 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+08:33:14.852903 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+08:33:14.852915 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+08:33:14.853445 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+08:33:14.853554 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+08:33:14.853582 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+08:33:14.853594 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+08:33:14.859084 [info ]: Started scheduling
+08:33:14.859148 [info ]: Finished scheduling [  0.00s]
+08:33:14.859219 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [49ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+08:33:14.859353 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T10:51:57.706606Z | 7f8588cd-b17e-4c09-b200-9833cafe58d3 ====================
+10:51:57.706849 [info ]: Started loading project
+10:51:57.708056 [info ]: Loading profiles.yml
+10:51:57.744569 [info ]: Started parsing
+10:51:57.877378 [info ]: Finished loading project [  0.17s]
+10:51:57.882334 [info ]: Cached model count updated: 7 models (accurate)
+10:51:57.889890 [info ]: Finished parsing [  0.15s]
+10:51:57.889934 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [183ms]
+==================== 2026-08-26T10:51:57.955250Z | 0af306ca-8d57-43bf-b4aa-f4f0a6b425d2 ====================
+10:51:57.955321 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully [70us]
+10:51:57.955379 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T10:51:58.015495Z | 6603cd1f-266e-410e-ba72-dd248ba45bc8 ====================
+10:51:58.015616 [info ]: Started loading project
+10:51:58.016556 [info ]: Loading profiles.yml
+10:51:58.030326 [info ]: Started parsing
+10:51:58.151997 [info ]: Finished loading project [  0.14s]
+10:51:58.156859 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+10:51:58.357154 [info ]: Finished parsing [  0.33s]
+10:51:58.361221 [info ]: Cached model count updated: 7 models (estimate)
+10:51:58.361249 [info ]: Cached model count updated: 7 models (accurate)
+10:51:58.361288 [info ]: Started scheduling
+10:51:58.361414 [info ]: Finished scheduling [  0.00s]
+10:51:58.361438 [debug]: Compilation - 4 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_daily", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+10:51:58.363953 [info ]: Started building task graph
+10:51:58.364051 [info ]: Finished building task graph [  0.00s]
+10:51:58.367548 [info ]: Started rendering (4 nodes)
+10:51:58.367583 [info ]: Started model raw.sales_daily
+10:51:58.367595 [debug]: Started rendering model raw.sales_daily
+10:51:58.367625 [info ]: Started model raw.fct_orders
+10:51:58.367641 [debug]: Started rendering model raw.fct_orders
+10:51:58.367663 [info ]: Started model raw.stg_orders
+10:51:58.367681 [debug]: Started rendering model raw.stg_orders
+10:51:58.367698 [info ]: Started model raw.stg_order_items
+10:51:58.367707 [debug]: Started rendering model raw.stg_order_items
+10:51:58.369150 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+10:51:58.369150 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+10:51:58.369249 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+10:51:58.369533 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+10:51:58.369565 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+10:51:58.369601 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+10:51:58.369617 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+10:51:58.369654 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+10:51:58.369666 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+10:51:58.370818 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+10:51:58.371012 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+10:51:58.371037 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+10:51:58.371049 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+10:51:58.375884 [info ]: Started scheduling
+10:51:58.376011 [info ]: Finished scheduling [  0.00s]
+10:51:58.376925 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [361ms]
+Processed: 4 models
+Summary: 4 total | 4 success
+10:51:58.377066 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T10:51:59.923974Z | 22637616-9784-4e2b-a7a5-90a53e2aa4fa ====================
+10:51:59.924066 [info ]: Started loading project
+10:51:59.924954 [info ]: Loading profiles.yml
+10:51:59.969246 [info ]: Cached model count updated: 7 models (estimate)
+10:51:59.969274 [info ]: Cached model count updated: 7 models (accurate)
+10:51:59.969308 [info ]: Started scheduling
+10:51:59.969409 [info ]: Finished scheduling [  0.00s]
+10:51:59.969432 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+10:51:59.970886 [info ]: Started building task graph
+10:51:59.970950 [info ]: Finished building task graph [  0.00s]
+10:51:59.974054 [info ]: Started rendering (7 nodes)
+10:51:59.974093 [info ]: Started model raw.stg_customers
+10:51:59.974111 [debug]: Started rendering model raw.stg_customers
+10:51:59.974147 [info ]: Started model raw.sales_daily
+10:51:59.974162 [debug]: Started rendering model raw.sales_daily
+10:51:59.974179 [info ]: Started model raw.sales_by_category
+10:51:59.974181 [info ]: Finished loading project [  0.05s]
+10:51:59.974190 [debug]: Started rendering model raw.sales_by_category
+10:51:59.974205 [info ]: Started model raw.stg_products
+10:51:59.974219 [debug]: Started rendering model raw.stg_products
+10:51:59.974234 [info ]: Started model raw.fct_orders
+10:51:59.974248 [debug]: Started rendering model raw.fct_orders
+10:51:59.974264 [info ]: Started model raw.stg_orders
+10:51:59.974283 [debug]: Started rendering model raw.stg_orders
+10:51:59.974307 [info ]: Started model raw.stg_order_items
+10:51:59.974320 [debug]: Started rendering model raw.stg_order_items
+10:51:59.974654 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+10:51:59.974784 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+10:51:59.974816 [info ]:  Succeeded [-------] model raw.sales_daily (table)
+10:51:59.975014 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+10:51:59.975210 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+10:51:59.975217 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+10:51:59.975238 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+10:51:59.975238 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+10:51:59.975280 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+10:51:59.975291 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+10:51:59.975323 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+10:51:59.975334 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+10:51:59.975358 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+10:51:59.975368 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+10:51:59.975458 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+10:51:59.975481 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+10:51:59.975516 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+10:51:59.975529 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+10:51:59.976260 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+10:51:59.976365 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+10:51:59.976393 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+10:51:59.976405 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+10:51:59.980769 [info ]: Started scheduling
+10:51:59.980833 [info ]: Finished scheduling [  0.00s]
+10:51:59.980908 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [56ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+10:51:59.981055 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T10:52:27.979674Z | 79ec78b2-042c-4cc3-b32c-4fc53ca512d2 ====================
+10:52:27.979768 [info ]: Started loading project
+10:52:27.980572 [info ]: Loading profiles.yml
+10:52:27.995269 [info ]: Started parsing
+10:52:28.114234 [info ]: Finished loading project [  0.13s]
+10:52:28.118736 [info ]: Cached model count updated: 7 models (accurate)
+10:52:28.123050 [info ]: Finished parsing [  0.13s]
+10:52:28.123097 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [143ms]
+==================== 2026-08-26T10:52:28.173931Z | 47e77b18-e2f3-4037-a6ab-ee4bbc59ffe5 ====================
+10:52:28.173998 [info ]: Started loading project
+10:52:28.174709 [info ]: Loading profiles.yml
+10:52:28.191992 [info ]: Started parsing
+10:52:28.307358 [info ]: Finished loading project [  0.13s]
+10:52:28.311311 [info ]: Cached model count updated: 7 models (accurate)
+10:52:28.318248 [info ]: Finished parsing [  0.13s]
+10:52:28.318294 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [144ms]
+==================== 2026-08-26T10:52:28.347093Z | 8d4392a8-ad4c-4415-8ae1-c29a23d3eb57 ====================
+10:52:28.347170 [info ]: Started loading project
+10:52:28.347719 [info ]: Loading profiles.yml
+10:52:28.358904 [info ]: Started parsing
+10:52:28.507269 [info ]: Finished loading project [  0.16s]
+10:52:28.511257 [info ]: Cached model count updated: 7 models (accurate)
+10:52:28.517063 [info ]: Finished parsing [  0.16s]
+10:52:28.517113 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [170ms]
+==================== 2026-08-26T10:52:28.575428Z | 9de7c5eb-8b8c-4a84-a67b-10fbbfa56f60 ====================
+10:52:28.575497 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully [69us]
+10:52:28.575584 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T10:52:28.638593Z | 02e8e08f-b853-4b47-bb75-7ca37eaccebe ====================
+10:52:28.638707 [info ]: Started loading project
+10:52:28.639587 [info ]: Loading profiles.yml
+10:52:28.655280 [info ]: Started parsing
+10:52:28.808407 [info ]: Finished loading project [  0.17s]
+10:52:28.811123 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+10:52:29.002586 [info ]: Finished parsing [  0.35s]
+10:52:29.007425 [info ]: Cached model count updated: 7 models (estimate)
+10:52:29.007457 [info ]: Cached model count updated: 7 models (accurate)
+10:52:29.007497 [info ]: Started scheduling
+10:52:29.007611 [info ]: Finished scheduling [  0.00s]
+10:52:29.007637 [debug]: Compilation - 4 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_daily", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+10:52:29.010281 [info ]: Started building task graph
+10:52:29.010364 [info ]: Finished building task graph [  0.00s]
+10:52:29.014304 [info ]: Started rendering (4 nodes)
+10:52:29.014343 [info ]: Started model raw.sales_daily
+10:52:29.014359 [debug]: Started rendering model raw.sales_daily
+10:52:29.014399 [info ]: Started model raw.fct_orders
+10:52:29.014415 [debug]: Started rendering model raw.fct_orders
+10:52:29.014433 [info ]: Started model raw.stg_orders
+10:52:29.014446 [debug]: Started rendering model raw.stg_orders
+10:52:29.014460 [info ]: Started model raw.stg_order_items
+10:52:29.014474 [debug]: Started rendering model raw.stg_order_items
+10:52:29.014905 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+10:52:29.015353 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+10:52:29.015750 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+10:52:29.016682 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+10:52:29.017296 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+10:52:29.017336 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+10:52:29.017383 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+10:52:29.017398 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+10:52:29.017406 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+10:52:29.017425 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+10:52:29.017455 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+10:52:29.017688 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+10:52:29.017737 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+10:52:29.022774 [info ]: Started scheduling
+10:52:29.022896 [info ]: Finished scheduling [  0.00s]
+10:52:29.023790 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [385ms]
+Processed: 4 models
+Summary: 4 total | 4 success
+10:52:29.024063 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-26T10:52:30.569171Z | cbc86be0-26e4-450a-94c2-2255bb2556a0 ====================
+10:52:30.569541 [info ]: Started loading project
+10:52:30.571631 [info ]: Loading profiles.yml
+10:52:30.625726 [info ]: Cached model count updated: 7 models (estimate)
+10:52:30.625762 [info ]: Cached model count updated: 7 models (accurate)
+10:52:30.625808 [info ]: Started scheduling
+10:52:30.625931 [info ]: Finished scheduling [  0.00s]
+10:52:30.625958 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+10:52:30.629657 [info ]: Started building task graph
+10:52:30.629778 [info ]: Finished building task graph [  0.00s]
+10:52:30.633430 [info ]: Started rendering (7 nodes)
+10:52:30.633470 [info ]: Started model raw.stg_customers
+10:52:30.633485 [debug]: Started rendering model raw.stg_customers
+10:52:30.633520 [info ]: Started model raw.sales_daily
+10:52:30.633536 [debug]: Started rendering model raw.sales_daily
+10:52:30.633554 [info ]: Started model raw.sales_by_category
+10:52:30.633563 [debug]: Started rendering model raw.sales_by_category
+10:52:30.633570 [info ]: Finished loading project [  0.06s]
+10:52:30.633579 [info ]: Started model raw.stg_products
+10:52:30.633588 [debug]: Started rendering model raw.stg_products
+10:52:30.633605 [info ]: Started model raw.fct_orders
+10:52:30.633614 [debug]: Started rendering model raw.fct_orders
+10:52:30.633631 [info ]: Started model raw.stg_orders
+10:52:30.633640 [debug]: Started rendering model raw.stg_orders
+10:52:30.633655 [info ]: Started model raw.stg_order_items
+10:52:30.633667 [debug]: Started rendering model raw.stg_order_items
+10:52:30.634353 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+10:52:30.634376 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+10:52:30.634910 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+10:52:30.634952 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+10:52:30.635070 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+10:52:30.635116 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+10:52:30.635184 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+10:52:30.635232 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+10:52:30.635260 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+10:52:30.635286 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+10:52:30.635305 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+10:52:30.635317 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+10:52:30.635657 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+10:52:30.636005 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+10:52:30.636036 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+10:52:30.636660 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+10:52:30.636784 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+10:52:30.636810 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+10:52:30.637016 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+10:52:30.637127 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+10:52:30.637163 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+10:52:30.637176 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+10:52:30.642749 [info ]: Started scheduling
+10:52:30.642831 [info ]: Finished scheduling [  0.00s]
+10:52:30.642974 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [73ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+10:52:30.643133 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-31T17:16:31.729012Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-08-31T17:16:31.740217Z | 0e0af3e0-b7bb-4cad-96b1-c6e31f4e42ca ====================
+17:16:31.741094 [info ]: Starting dbt LSP server
+17:16:31.742584 [info ]: Connecting to LSP client on port 8000
+17:16:31.746686 [info ]: Successfully connected to LSP client
+17:16:31.746952 [info ]: Creating LSP service...
+17:16:31.769016 [info ]: Creating LSP server...
+17:16:31.769047 [info ]: Starting LSP server...
+17:16:31.958257 [info ]: Loading profiles.yml
+==================== 2026-08-31T17:16:32.171011Z | a6cd9300-5b26-4227-a7cc-e7d54e220eb2 ====================
+17:16:32.173699 [info ]: Started loading project
+17:16:32.186731 [info ]: Loading profiles.yml
+17:16:32.219315 [debug]:    Started loading packages
+17:16:32.233054 [debug]:     Loaded [  0.01s] packages
+17:16:32.243989 [info ]: Finished loading project [  0.07s]
+17:16:32.249636 [info ]: Started parsing
+17:16:32.416255 [debug]: Finished parsing models/marts/fct_orders.sql [  0.04s]
+17:16:32.427566 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.01s]
+17:16:32.428575 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+17:16:32.442345 [debug]: Finished parsing models/staging/stg_customers.sql [  0.01s]
+17:16:32.452977 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.01s]
+17:16:32.468668 [debug]: Finished parsing models/staging/stg_orders.sql [  0.02s]
+17:16:32.481646 [debug]: Finished parsing models/staging/stg_products.sql [  0.01s]
+17:16:32.784539 [info ]: Finished parsing [  0.53s]
+17:16:32.788574 [info ]: Cached model count updated: 7 models (estimate)
+17:16:32.788603 [info ]: Cached model count updated: 7 models (accurate)
+17:16:32.790641 [info ]: Started scheduling
+17:16:32.799531 [info ]: Finished scheduling [  0.01s]
+17:16:32.799831 [debug]: Compilation - 4 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_daily", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+17:16:32.800584 [info ]: Started scheduling
+17:16:32.801011 [info ]: Finished scheduling [  0.00s]
+17:16:32.829753 [info ]: Started building task graph
+17:16:32.833373 [info ]: Finished building task graph [  0.00s]
+17:16:32.884261 [info ]: Started rendering (4 nodes)
+17:16:32.885232 [info ]: Started model raw.sales_daily
+17:16:32.885559 [debug]: Started rendering model raw.sales_daily
+17:16:32.886198 [info ]: Started model raw.fct_orders
+17:16:32.886249 [debug]: Started rendering model raw.fct_orders
+17:16:32.886595 [info ]: Started model raw.stg_orders
+17:16:32.886625 [debug]: Started rendering model raw.stg_orders
+17:16:32.886691 [info ]: Started model raw.stg_order_items
+17:16:32.886732 [debug]: Started rendering model raw.stg_order_items
+17:16:32.903731 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+17:16:32.903731 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+17:16:32.904370 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+17:16:32.904905 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+17:16:32.918792 [debug]: Finished rendering [  0.03s] model raw.fct_orders [success]
+17:16:32.918851 [info ]:  Succeeded [  0.03s] model raw.fct_orders (table)
+17:16:32.918908 [debug]: Finished rendering [  0.03s] model raw.stg_order_items [success]
+17:16:32.918922 [info ]:  Succeeded [  0.03s] model raw.stg_order_items (view)
+17:16:32.918948 [debug]: Finished rendering [  0.03s] model raw.sales_daily [success]
+17:16:32.918959 [info ]:  Succeeded [  0.03s] model raw.sales_daily (table)
+17:16:32.918978 [debug]: Finished rendering [  0.03s] model raw.stg_orders [success]
+17:16:32.918987 [info ]: Finished rendering [  0.03s] (4 nodes, 0 skipped, 0 errors)
+17:16:32.919000 [info ]:  Succeeded [  0.03s] model raw.stg_orders (view)
+17:16:32.949227 [info ]: Started scheduling
+17:16:32.949303 [info ]: Finished scheduling [  0.00s]
+17:16:32.950892 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [779ms]
+Processed: 4 models
+Summary: 4 total | 4 success
+17:16:32.951097 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-31T17:16:34.843101Z | 3a8db292-5339-4b0b-8dca-28d85fa13f60 ====================
+17:16:34.843343 [info ]: Started loading project
+17:16:34.844966 [info ]: Loading profiles.yml
+17:16:34.937799 [info ]: Cached model count updated: 7 models (estimate)
+17:16:34.937842 [info ]: Cached model count updated: 7 models (accurate)
+17:16:34.937884 [info ]: Started scheduling
+17:16:34.937973 [info ]: Finished scheduling [  0.00s]
+17:16:34.937996 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+17:16:34.941928 [info ]: Started building task graph
+17:16:34.942094 [info ]: Finished building task graph [  0.00s]
+17:16:34.947348 [info ]: Started rendering (7 nodes)
+17:16:34.947389 [info ]: Started model raw.stg_customers
+17:16:34.947461 [debug]: Started rendering model raw.stg_customers
+17:16:34.947506 [info ]: Started model raw.sales_daily
+17:16:34.947523 [debug]: Started rendering model raw.sales_daily
+17:16:34.947541 [info ]: Started model raw.sales_by_category
+17:16:34.947550 [debug]: Started rendering model raw.sales_by_category
+17:16:34.947569 [info ]: Started model raw.stg_products
+17:16:34.947577 [debug]: Started rendering model raw.stg_products
+17:16:34.947591 [info ]: Started model raw.fct_orders
+17:16:34.947599 [debug]: Started rendering model raw.fct_orders
+17:16:34.947614 [info ]: Started model raw.stg_orders
+17:16:34.947624 [debug]: Started rendering model raw.stg_orders
+17:16:34.947669 [info ]: Finished loading project [  0.10s]
+17:16:34.947680 [info ]: Started model raw.stg_order_items
+17:16:34.947695 [debug]: Started rendering model raw.stg_order_items
+17:16:34.949694 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+17:16:34.949684 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+17:16:34.950117 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+17:16:34.950259 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+17:16:34.950396 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+17:16:34.950420 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+17:16:34.950450 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+17:16:34.950459 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+17:16:34.950478 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+17:16:34.950487 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+17:16:34.950504 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+17:16:34.950512 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+17:16:34.951118 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+17:16:34.951911 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+17:16:34.951950 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+17:16:34.952344 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+17:16:34.952329 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+17:16:34.952595 [debug]: Finished rendering [  0.01s] model raw.stg_customers [success]
+17:16:34.952628 [info ]:  Succeeded [  0.01s] model raw.stg_customers (view)
+17:16:34.952963 [debug]: Finished rendering [  0.01s] model raw.sales_by_category [success]
+17:16:34.953021 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+17:16:34.953035 [info ]:  Succeeded [  0.01s] model raw.sales_by_category (table)
+17:16:34.965648 [info ]: Started scheduling
+17:16:34.965769 [info ]: Finished scheduling [  0.00s]
+17:16:34.965858 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [122ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+17:16:34.966492 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-31T17:18:30.913577Z | e0e23225-7a62-4320-9e39-54c56f3633fd ====================
+17:18:30.913671 [info ]: Started loading project
+17:18:30.914305 [info ]: Loading profiles.yml
+17:18:30.929105 [info ]: Started parsing
+17:18:30.975494 [info ]: Finished loading project [  0.06s]
+17:18:30.978066 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+17:18:31.130818 [info ]: Finished parsing [  0.20s]
+17:18:31.133943 [info ]: Cached model count updated: 7 models (estimate)
+17:18:31.133964 [info ]: Cached model count updated: 7 models (accurate)
+17:18:31.133990 [info ]: Started scheduling
+17:18:31.134080 [info ]: Finished scheduling [  0.00s]
+17:18:31.134099 [debug]: Compilation - 4 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_daily", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+17:18:31.135656 [info ]: Started building task graph
+17:18:31.135717 [info ]: Finished building task graph [  0.00s]
+17:18:31.139180 [info ]: Started rendering (4 nodes)
+17:18:31.139211 [info ]: Started model raw.sales_daily
+17:18:31.139462 [debug]: Started rendering model raw.sales_daily
+17:18:31.139504 [info ]: Started model raw.fct_orders
+17:18:31.139513 [debug]: Started rendering model raw.fct_orders
+17:18:31.139524 [info ]: Started model raw.stg_orders
+17:18:31.139529 [debug]: Started rendering model raw.stg_orders
+17:18:31.139539 [info ]: Started model raw.stg_order_items
+17:18:31.139549 [debug]: Started rendering model raw.stg_order_items
+17:18:31.140522 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+17:18:31.140520 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+17:18:31.140590 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+17:18:31.140655 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+17:18:31.140683 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+17:18:31.140715 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+17:18:31.140732 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+17:18:31.140753 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+17:18:31.140767 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+17:18:31.141884 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+17:18:31.142106 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+17:18:31.142142 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+17:18:31.142156 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+17:18:31.146887 [info ]: Started scheduling
+17:18:31.146967 [info ]: Finished scheduling [  0.00s]
+17:18:31.147993 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [234ms]
+Processed: 4 models
+Summary: 4 total | 4 success
+17:18:31.148094 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-31T17:18:32.699103Z | 64f26cdd-9e28-4595-8d4c-f92dbdb49279 ====================
+17:18:32.699237 [info ]: Started loading project
+17:18:32.699857 [info ]: Loading profiles.yml
+17:18:32.729572 [info ]: Cached model count updated: 7 models (estimate)
+17:18:32.729596 [info ]: Cached model count updated: 7 models (accurate)
+17:18:32.729620 [info ]: Started scheduling
+17:18:32.729696 [info ]: Finished scheduling [  0.00s]
+17:18:32.729712 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+17:18:32.730953 [info ]: Started building task graph
+17:18:32.731006 [info ]: Finished building task graph [  0.00s]
+17:18:32.733489 [info ]: Started rendering (7 nodes)
+17:18:32.733514 [info ]: Started model raw.stg_customers
+17:18:32.733523 [debug]: Started rendering model raw.stg_customers
+17:18:32.733546 [info ]: Started model raw.sales_daily
+17:18:32.733552 [debug]: Started rendering model raw.sales_daily
+17:18:32.733561 [info ]: Started model raw.sales_by_category
+17:18:32.733567 [debug]: Started rendering model raw.sales_by_category
+17:18:32.733576 [info ]: Started model raw.stg_products
+17:18:32.733585 [debug]: Started rendering model raw.stg_products
+17:18:32.733593 [info ]: Started model raw.fct_orders
+17:18:32.733599 [debug]: Started rendering model raw.fct_orders
+17:18:32.733607 [info ]: Started model raw.stg_orders
+17:18:32.733607 [info ]: Finished loading project [  0.03s]
+17:18:32.733618 [debug]: Started rendering model raw.stg_orders
+17:18:32.733635 [info ]: Started model raw.stg_order_items
+17:18:32.733644 [debug]: Started rendering model raw.stg_order_items
+17:18:32.734100 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+17:18:32.734185 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+17:18:32.734213 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+17:18:32.734244 [info ]:  Succeeded [-------] model raw.sales_daily (table)
+17:18:32.734265 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+17:18:32.734279 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+17:18:32.734293 [info ]:  Succeeded [-------] model raw.fct_orders (table)
+17:18:32.734319 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+17:18:32.734335 [info ]:  Succeeded [-------] model raw.stg_products (view)
+17:18:32.734474 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+17:18:32.734492 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+17:18:32.734521 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+17:18:32.734562 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+17:18:32.734587 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+17:18:32.734616 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+17:18:32.734665 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+17:18:32.734694 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+17:18:32.734705 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+17:18:32.734908 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+17:18:32.734999 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+17:18:32.735022 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+17:18:32.735033 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+17:18:32.739371 [info ]: Started scheduling
+17:18:32.739451 [info ]: Finished scheduling [  0.00s]
+17:18:32.739559 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [40ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+17:18:32.739838 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-31T17:18:55.404054Z | a663fbcc-ca6f-4f7b-883a-3c4cc3bc247a ====================
+17:18:55.404161 [info ]: Started loading project
+17:18:55.404790 [info ]: Loading profiles.yml
+17:18:55.413112 [info ]: Started parsing
+17:18:55.467567 [info ]: Finished loading project [  0.06s]
+17:18:55.469823 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+17:18:55.690548 [info ]: Finished parsing [  0.28s]
+17:18:55.694774 [info ]: Cached model count updated: 7 models (estimate)
+17:18:55.694808 [info ]: Cached model count updated: 7 models (accurate)
+17:18:55.694850 [info ]: Started scheduling
+17:18:55.695003 [info ]: Finished scheduling [  0.00s]
+17:18:55.695037 [debug]: Compilation - 4 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_daily", "model.analytics.stg_order_items", "model.analytics.stg_orders"}
+17:18:55.697348 [info ]: Started building task graph
+17:18:55.697434 [info ]: Finished building task graph [  0.00s]
+17:18:55.701873 [info ]: Started rendering (4 nodes)
+17:18:55.701917 [info ]: Started model raw.sales_daily
+17:18:55.701931 [debug]: Started rendering model raw.sales_daily
+17:18:55.701967 [info ]: Started model raw.fct_orders
+17:18:55.701977 [debug]: Started rendering model raw.fct_orders
+17:18:55.702005 [info ]: Started model raw.stg_orders
+17:18:55.702184 [debug]: Started rendering model raw.stg_orders
+17:18:55.702222 [info ]: Started model raw.stg_order_items
+17:18:55.702237 [debug]: Started rendering model raw.stg_order_items
+17:18:55.702536 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+17:18:55.702688 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+17:18:55.702721 [info ]:  Succeeded [-------] model raw.fct_orders (table)
+17:18:55.703030 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+17:18:55.703167 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+17:18:55.703192 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+17:18:55.703581 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+17:18:55.703947 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+17:18:55.703987 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+17:18:55.704355 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+17:18:55.704864 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+17:18:55.704902 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+17:18:55.704920 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+17:18:55.713023 [info ]: Started scheduling
+17:18:55.713159 [info ]: Finished scheduling [  0.00s]
+17:18:55.714136 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [310ms]
+Processed: 4 models
+Summary: 4 total | 4 success
+17:18:55.714296 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-08-31T17:18:57.266699Z | 07f37b70-992b-4a01-aaf6-c76a875fb805 ====================
+17:18:57.266789 [info ]: Started loading project
+17:18:57.267469 [info ]: Loading profiles.yml
+17:18:57.300649 [info ]: Cached model count updated: 7 models (estimate)
+17:18:57.300672 [info ]: Cached model count updated: 7 models (accurate)
+17:18:57.300696 [info ]: Started scheduling
+17:18:57.300764 [info ]: Finished scheduling [  0.00s]
+17:18:57.300781 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+17:18:57.302089 [info ]: Started building task graph
+17:18:57.302142 [info ]: Finished building task graph [  0.00s]
+17:18:57.304657 [info ]: Started rendering (7 nodes)
+17:18:57.304683 [info ]: Started model raw.stg_customers
+17:18:57.304692 [debug]: Started rendering model raw.stg_customers
+17:18:57.304718 [info ]: Started model raw.sales_daily
+17:18:57.304728 [debug]: Started rendering model raw.sales_daily
+17:18:57.304738 [info ]: Started model raw.sales_by_category
+17:18:57.304744 [debug]: Started rendering model raw.sales_by_category
+17:18:57.304754 [info ]: Started model raw.stg_products
+17:18:57.304750 [info ]: Finished loading project [  0.04s]
+17:18:57.304760 [debug]: Started rendering model raw.stg_products
+17:18:57.304772 [info ]: Started model raw.fct_orders
+17:18:57.304781 [debug]: Started rendering model raw.fct_orders
+17:18:57.304795 [info ]: Started model raw.stg_orders
+17:18:57.304803 [debug]: Started rendering model raw.stg_orders
+17:18:57.304817 [info ]: Started model raw.stg_order_items
+17:18:57.304828 [debug]: Started rendering model raw.stg_order_items
+17:18:57.305201 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+17:18:57.305202 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+17:18:57.305208 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+17:18:57.305341 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+17:18:57.305370 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+17:18:57.305403 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+17:18:57.305413 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+17:18:57.305418 [info ]:  Succeeded [-------] model raw.sales_daily (table)
+17:18:57.305436 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+17:18:57.305450 [info ]:  Succeeded [-------] model raw.sales_by_category (table)
+17:18:57.305488 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+17:18:57.305503 [info ]:  Succeeded [-------] model raw.stg_products (view)
+17:18:57.305603 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+17:18:57.305612 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+17:18:57.305615 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+17:18:57.305683 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+17:18:57.305708 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+17:18:57.305733 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+17:18:57.305744 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+17:18:57.305771 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+17:18:57.305781 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+17:18:57.305790 [info ]:  Succeeded [-------] model raw.fct_orders (table)
+17:18:57.310412 [info ]: Started scheduling
+17:18:57.310469 [info ]: Finished scheduling [  0.00s]
+17:18:57.310520 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [43ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+17:18:57.310601 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T11:37:04.311438Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-09-04T11:37:04.319008Z | 6c332dea-ed14-4537-8507-c775260b384f ====================
+11:37:04.319430 [info ]: Starting dbt LSP server
+11:37:04.320265 [info ]: Connecting to LSP client on port 8000
+11:37:04.326257 [info ]: Successfully connected to LSP client
+11:37:04.326494 [info ]: Creating LSP service...
+11:37:04.335638 [info ]: Creating LSP server...
+11:37:04.335690 [info ]: Starting LSP server...
+11:37:04.470924 [info ]: Loading profiles.yml
+==================== 2026-09-04T11:37:04.555019Z | 1bbb575e-788a-40ff-80a8-992738b503ae ====================
+11:37:04.557335 [info ]: Started loading project
+11:37:04.567136 [info ]: Loading profiles.yml
+11:37:04.598622 [debug]:    Started loading packages
+11:37:04.608171 [debug]:     Loaded [  0.01s] packages
+11:37:04.616598 [info ]: Finished loading project [  0.06s]
+11:37:04.624606 [info ]: Started parsing
+11:37:04.708264 [debug]: Finished parsing models/staging/sources.yml [  0.01s]
+11:37:04.740587 [debug]: Finished parsing models/marts/fct_orders.sql [  0.02s]
+11:37:04.741802 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+11:37:04.742737 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+11:37:04.744011 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+11:37:04.744847 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+11:37:04.745836 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+11:37:04.746575 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+11:37:05.041311 [info ]: Finished parsing [  0.42s]
+11:37:05.045296 [info ]: Cached model count updated: 7 models (estimate)
+11:37:05.045326 [info ]: Cached model count updated: 7 models (accurate)
+11:37:05.047837 [info ]: Started scheduling
+11:37:05.056801 [info ]: Finished scheduling [  0.01s]
+11:37:05.057128 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_customers"}
+11:37:05.057976 [info ]: Started scheduling
+11:37:05.058448 [info ]: Finished scheduling [  0.00s]
+11:37:05.063297 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "customers" }) and interval: None
+11:37:05.081928 [info ]: Started building task graph
+11:37:05.085373 [info ]: Finished building task graph [  0.00s]
+11:37:05.132547 [info ]: Started rendering (1 nodes)
+11:37:05.133515 [info ]: Started model raw.stg_customers
+11:37:05.133720 [debug]: Started rendering model raw.stg_customers
+11:37:05.147921 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+11:37:05.150963 [debug]: Finished rendering [  0.02s] model raw.stg_customers [success]
+11:37:05.151008 [info ]: Finished rendering [  0.02s] (1 nodes, 0 skipped, 0 errors)
+11:37:05.151029 [info ]:  Succeeded [  0.02s] model raw.stg_customers (view)
+11:37:05.165188 [info ]: Started scheduling
+11:37:05.165240 [info ]: Finished scheduling [  0.00s]
+11:37:05.165980 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [610ms]
+Processed: 1 model
+Summary: 1 total | 1 success
+11:37:05.166151 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T11:37:06.727037Z | ce8ac47e-3c30-42af-bf80-2888080464b6 ====================
+11:37:06.727118 [info ]: Started loading project
+11:37:06.727903 [info ]: Loading profiles.yml
+11:37:06.762852 [info ]: Cached model count updated: 7 models (estimate)
+11:37:06.762876 [info ]: Cached model count updated: 7 models (accurate)
+11:37:06.762914 [info ]: Started scheduling
+11:37:06.763017 [info ]: Finished scheduling [  0.00s]
+11:37:06.763038 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+11:37:06.764783 [info ]: Started building task graph
+11:37:06.764861 [info ]: Finished building task graph [  0.00s]
+11:37:06.767564 [info ]: Started rendering (7 nodes)
+11:37:06.767596 [info ]: Started model raw.stg_customers
+11:37:06.767610 [debug]: Started rendering model raw.stg_customers
+11:37:06.767711 [info ]: Started model raw.sales_daily
+11:37:06.767720 [info ]: Finished loading project [  0.04s]
+11:37:06.767732 [debug]: Started rendering model raw.sales_daily
+11:37:06.767861 [info ]: Started model raw.sales_by_category
+11:37:06.767980 [debug]: Started rendering model raw.sales_by_category
+11:37:06.768023 [info ]: Started model raw.stg_products
+11:37:06.768037 [debug]: Started rendering model raw.stg_products
+11:37:06.768061 [info ]: Started model raw.fct_orders
+11:37:06.768071 [debug]: Started rendering model raw.fct_orders
+11:37:06.768086 [info ]: Started model raw.stg_orders
+11:37:06.768097 [debug]: Started rendering model raw.stg_orders
+11:37:06.768115 [info ]: Started model raw.stg_order_items
+11:37:06.768124 [debug]: Started rendering model raw.stg_order_items
+11:37:06.768986 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+11:37:06.769106 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+11:37:06.769136 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+11:37:06.771958 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+11:37:06.772008 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+11:37:06.772225 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+11:37:06.772907 [debug]: Finished rendering [  0.01s] model raw.sales_daily [success]
+11:37:06.772971 [info ]:  Succeeded [  0.01s] model raw.sales_daily (table)
+11:37:06.773035 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+11:37:06.773054 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+11:37:06.773079 [debug]: Finished rendering [  0.01s] model raw.sales_by_category [success]
+11:37:06.773090 [info ]:  Succeeded [  0.01s] model raw.sales_by_category (table)
+11:37:06.773729 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+11:37:06.774167 [debug]: Finished rendering [  0.01s] model raw.fct_orders [success]
+11:37:06.774201 [info ]:  Succeeded [  0.01s] model raw.fct_orders (table)
+11:37:06.774427 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+11:37:06.775051 [debug]: Finished rendering [  0.01s] model raw.stg_orders [success]
+11:37:06.775089 [info ]:  Succeeded [  0.01s] model raw.stg_orders (view)
+11:37:06.775192 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+11:37:06.775658 [debug]: Finished rendering [  0.01s] model raw.stg_order_items [success]
+11:37:06.775685 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+11:37:06.775698 [info ]:  Succeeded [  0.01s] model raw.stg_order_items (view)
+11:37:06.782855 [info ]: Started scheduling
+11:37:06.782928 [info ]: Finished scheduling [  0.00s]
+11:37:06.783005 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [55ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+11:37:06.783157 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T11:37:23.832967Z | a0a8da80-39c8-43ed-8052-90b908d92d71 ====================
+11:37:23.833094 [info ]: Started loading project
+11:37:23.834232 [info ]: Loading profiles.yml
+11:37:23.863984 [info ]: Started parsing
+11:37:23.951062 [info ]: Finished loading project [  0.12s]
+11:37:23.954126 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+11:37:24.323475 [info ]: Finished parsing [  0.46s]
+11:37:24.326646 [info ]: Cached model count updated: 7 models (estimate)
+11:37:24.326668 [info ]: Cached model count updated: 7 models (accurate)
+11:37:24.326694 [info ]: Started scheduling
+11:37:24.326764 [info ]: Finished scheduling [  0.00s]
+11:37:24.326782 [debug]: Compilation - 0 nodes selected: {}
+11:37:24.327486 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+11:37:24.327768 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:37:24.329776 [info ]: Started building task graph
+11:37:24.329807 [info ]: Finished building task graph [  0.00s]
+11:37:24.339736 [info ]: Started scheduling
+11:37:24.339897 [info ]: Finished scheduling [  0.00s]
+11:37:24.341001 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [508ms]
+11:37:24.346633 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T11:37:25.713262Z | f518c99d-cbd4-4889-956c-172f86f99005 ====================
+11:37:25.713377 [info ]: Started loading project
+11:37:25.714547 [info ]: Loading profiles.yml
+11:37:25.730756 [info ]: Started parsing
+11:37:25.867074 [info ]: Finished loading project [  0.15s]
+11:37:25.870087 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+11:37:26.114897 [info ]: Finished parsing [  0.38s]
+11:37:26.118969 [info ]: Cached model count updated: 7 models (estimate)
+11:37:26.119004 [info ]: Cached model count updated: 7 models (accurate)
+11:37:26.119050 [info ]: Started scheduling
+11:37:26.119117 [info ]: Finished scheduling [  0.00s]
+11:37:26.119138 [debug]: Compilation - 0 nodes selected: {}
+11:37:26.119167 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+11:37:26.119185 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:37:26.122789 [info ]: Started building task graph
+11:37:26.122829 [info ]: Finished building task graph [  0.00s]
+11:37:26.133246 [info ]: Started scheduling
+11:37:26.133426 [info ]: Finished scheduling [  0.00s]
+11:37:26.134872 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [421ms]
+11:37:26.139008 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T11:37:27.709310Z | 1f5badca-72f5-4ab0-aaca-c4afc380edb4 ====================
+11:37:27.709410 [info ]: Started loading project
+11:37:27.710192 [info ]: Loading profiles.yml
+11:37:27.758536 [info ]: Cached model count updated: 7 models (estimate)
+11:37:27.758560 [info ]: Cached model count updated: 7 models (accurate)
+11:37:27.758601 [info ]: Started scheduling
+11:37:27.758699 [info ]: Finished scheduling [  0.00s]
+11:37:27.758720 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+11:37:27.760957 [info ]: Started building task graph
+11:37:27.761052 [info ]: Finished building task graph [  0.00s]
+11:37:27.763932 [info ]: Started rendering (7 nodes)
+11:37:27.763965 [info ]: Started model raw.stg_customers
+11:37:27.763979 [debug]: Started rendering model raw.stg_customers
+11:37:27.764030 [info ]: Started model raw.sales_daily
+11:37:27.764044 [debug]: Started rendering model raw.sales_daily
+11:37:27.764056 [info ]: Finished loading project [  0.05s]
+11:37:27.764060 [info ]: Started model raw.sales_by_category
+11:37:27.764071 [debug]: Started rendering model raw.sales_by_category
+11:37:27.764085 [info ]: Started model raw.stg_products
+11:37:27.764093 [debug]: Started rendering model raw.stg_products
+11:37:27.764106 [info ]: Started model raw.fct_orders
+11:37:27.764119 [debug]: Started rendering model raw.fct_orders
+11:37:27.764133 [info ]: Started model raw.stg_orders
+11:37:27.764141 [debug]: Started rendering model raw.stg_orders
+11:37:27.764155 [info ]: Started model raw.stg_order_items
+11:37:27.764167 [debug]: Started rendering model raw.stg_order_items
+11:37:27.764571 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+11:37:27.764688 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+11:37:27.764715 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+11:37:27.765067 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+11:37:27.765090 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+11:37:27.765099 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+11:37:27.765400 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+11:37:27.765434 [info ]:  Succeeded [  0.00s] model raw.sales_by_category (table)
+11:37:27.765468 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+11:37:27.765479 [info ]:  Succeeded [  0.00s] model raw.sales_daily (table)
+11:37:27.765480 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+11:37:27.765499 [info ]:  Succeeded [  0.00s] model raw.fct_orders (table)
+11:37:27.765525 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+11:37:27.765559 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+11:37:27.765569 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+11:37:27.767508 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+11:37:27.767535 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+11:37:27.768172 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+11:37:27.768207 [info ]:  Succeeded [  0.00s] model raw.stg_orders (view)
+11:37:27.768241 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+11:37:27.768253 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:37:27.768262 [info ]:  Succeeded [  0.00s] model raw.stg_order_items (view)
+11:37:27.775969 [info ]: Started scheduling
+11:37:27.776044 [info ]: Finished scheduling [  0.00s]
+11:37:27.776129 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [66ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+11:37:27.776284 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T11:37:28.741981Z | c8f8a0c6-f874-415d-ae2d-2f4f3d0bf8ff ====================
+11:37:28.742092 [info ]: Started loading project
+11:37:28.742759 [info ]: Loading profiles.yml
+11:37:28.755501 [info ]: Started parsing
+11:37:28.854011 [info ]: Finished loading project [  0.11s]
+11:37:28.857118 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+11:37:29.144525 [info ]: Finished parsing [  0.39s]
+11:37:29.150549 [info ]: Cached model count updated: 7 models (estimate)
+11:37:29.150765 [info ]: Cached model count updated: 7 models (accurate)
+11:37:29.150887 [info ]: Started scheduling
+11:37:29.151201 [info ]: Finished scheduling [  0.00s]
+11:37:29.151347 [debug]: Compilation - 0 nodes selected: {}
+11:37:29.151412 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+11:37:29.151466 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:37:29.154330 [info ]: Started building task graph
+11:37:29.154380 [info ]: Finished building task graph [  0.00s]
+11:37:29.168183 [info ]: Started scheduling
+11:37:29.168326 [info ]: Finished scheduling [  0.00s]
+11:37:29.170317 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [428ms]
+11:37:29.179573 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T11:37:30.720743Z | 9668e165-67bc-45ea-aefc-13d1922be7b9 ====================
+11:37:30.720853 [info ]: Started loading project
+11:37:30.721645 [info ]: Loading profiles.yml
+11:37:30.755883 [info ]: Cached model count updated: 7 models (estimate)
+11:37:30.755906 [info ]: Cached model count updated: 7 models (accurate)
+11:37:30.755942 [info ]: Started scheduling
+11:37:30.756040 [info ]: Finished scheduling [  0.00s]
+11:37:30.756060 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+11:37:30.757393 [info ]: Started building task graph
+11:37:30.757467 [info ]: Finished building task graph [  0.00s]
+11:37:30.760144 [info ]: Started rendering (7 nodes)
+11:37:30.760177 [info ]: Started model raw.stg_customers
+11:37:30.760192 [debug]: Started rendering model raw.stg_customers
+11:37:30.760231 [info ]: Started model raw.sales_daily
+11:37:30.760245 [debug]: Started rendering model raw.sales_daily
+11:37:30.760260 [info ]: Started model raw.sales_by_category
+11:37:30.760260 [info ]: Finished loading project [  0.04s]
+11:37:30.760299 [debug]: Started rendering model raw.sales_by_category
+11:37:30.760351 [info ]: Started model raw.stg_products
+11:37:30.760386 [debug]: Started rendering model raw.stg_products
+11:37:30.760442 [info ]: Started model raw.fct_orders
+11:37:30.760459 [debug]: Started rendering model raw.fct_orders
+11:37:30.760477 [info ]: Started model raw.stg_orders
+11:37:30.760487 [debug]: Started rendering model raw.stg_orders
+11:37:30.760502 [info ]: Started model raw.stg_order_items
+11:37:30.760511 [debug]: Started rendering model raw.stg_order_items
+11:37:30.760724 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+11:37:30.760747 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+11:37:30.760783 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+11:37:30.760888 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+11:37:30.760908 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+11:37:30.760916 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+11:37:30.760941 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+11:37:30.760951 [debug]: Finished rendering [  0.00s] model raw.sales_by_category [success]
+11:37:30.760963 [info ]:  Succeeded [-------] model raw.sales_by_category (table)
+11:37:30.760981 [debug]: Finished rendering [  0.00s] model raw.sales_daily [success]
+11:37:30.760990 [info ]:  Succeeded [-------] model raw.sales_daily (table)
+11:37:30.761103 [debug]: Finished rendering [  0.00s] model raw.stg_orders [success]
+11:37:30.761120 [info ]:  Succeeded [-------] model raw.stg_orders (view)
+11:37:30.761138 [debug]: Finished rendering [  0.00s] model raw.fct_orders [success]
+11:37:30.761149 [info ]:  Succeeded [-------] model raw.fct_orders (table)
+11:37:30.761269 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+11:37:30.761425 [debug]: Finished rendering [  0.00s] model raw.stg_order_items [success]
+11:37:30.761448 [info ]:  Succeeded [-------] model raw.stg_order_items (view)
+11:37:30.763001 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+11:37:30.763213 [debug]: Finished rendering [  0.00s] model raw.stg_products [success]
+11:37:30.763241 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+11:37:30.763253 [info ]:  Succeeded [  0.00s] model raw.stg_products (view)
+11:37:30.770053 [info ]: Started scheduling
+11:37:30.770142 [info ]: Finished scheduling [  0.00s]
+11:37:30.770223 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [49ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+11:37:30.770427 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T13:55:54.944716Z | 8194ec29-3d31-46cb-ac50-c56838055dc9 ====================
+13:55:54.944946 [info ]: Started loading project
+13:55:54.946231 [info ]: Loading profiles.yml
+==================== 2026-09-04T13:55:54.964379Z | 306080e5-abc1-46bc-8280-5845dedf5224 ====================
+13:55:54.964443 [info ]: Started loading project
+13:55:54.965103 [info ]: Loading profiles.yml
+13:55:54.965198 [info ]: Finished loading project [  0.02s]
+13:55:54.973525 [debug]:    Started loading packages
+13:55:54.978856 [debug]:     Loaded [  0.01s] packages
+13:55:54.980317 [info ]: Finished loading project [  0.02s]
+13:55:54.980681 [info ]: Started parsing
+13:55:55.035922 [debug]: Finished parsing models/staging/schema.yml [  0.00s]
+13:55:55.036404 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+13:55:55.044780 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+13:55:55.045973 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+13:55:55.047129 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+13:55:55.048374 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+13:55:55.049573 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+13:55:55.050458 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+13:55:55.051500 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+13:55:55.337893 [info ]: Finished parsing [  0.36s]
+13:55:55.339350 [info ]: Cached model count updated: 7 models (estimate)
+13:55:55.339390 [info ]: Cached model count updated: 7 models (accurate)
+13:55:55.339440 [info ]: Started scheduling
+13:55:55.339521 [info ]: Finished scheduling [  0.00s]
+13:55:55.339545 [debug]: Compilation - 0 nodes selected: {}
+13:55:55.339579 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+13:55:55.339605 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:55:55.339619 [info ]: Started scheduling
+13:55:55.339731 [info ]: Finished scheduling [  0.00s]
+13:55:55.340174 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "orders" }) and interval: None
+13:55:55.340214 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "order_items" }) and interval: None
+13:55:55.340224 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "products" }) and interval: None
+13:55:55.340230 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "customers" }) and interval: None
+13:55:55.343518 [info ]: Started building task graph
+13:55:55.343568 [info ]: Finished building task graph [  0.00s]
+13:55:55.359286 [info ]: Started scheduling
+13:55:55.359369 [info ]: Finished scheduling [  0.00s]
+13:55:55.359551 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [395ms]
+13:55:55.359633 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [414ms]
+13:55:55.370948 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T13:55:55.741765Z | 8aff31b0-3fc8-46c9-914b-655de080467c ====================
+13:55:55.741869 [info ]: Started loading project
+13:55:55.742561 [info ]: Loading profiles.yml
+13:55:55.785592 [info ]: Cached model count updated: 7 models (estimate)
+13:55:55.785620 [info ]: Cached model count updated: 7 models (accurate)
+13:55:55.785661 [info ]: Started scheduling
+13:55:55.785771 [info ]: Finished scheduling [  0.00s]
+13:55:55.785796 [debug]: Compilation - 1 nodes selected: {"model.analytics.stg_customers"}
+13:55:55.787879 [info ]: Started building task graph
+13:55:55.787927 [info ]: Finished building task graph [  0.00s]
+13:55:55.790618 [info ]: Started rendering (1 nodes)
+13:55:55.790657 [info ]: Started model raw.stg_customers
+13:55:55.790674 [debug]: Started rendering model raw.stg_customers
+13:55:55.790781 [info ]: Finished loading project [  0.05s]
+13:55:55.793298 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+13:55:55.793779 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+13:55:55.793815 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+13:55:55.793846 [info ]:  Succeeded [  0.00s] model raw.stg_customers (view)
+13:55:55.800309 [info ]: Started scheduling
+13:55:55.800373 [info ]: Finished scheduling [  0.00s]
+13:55:55.800435 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [58ms]
+Processed: 1 model
+Summary: 1 total | 1 success
+13:55:55.800506 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T13:55:57.353585Z | 9de997e2-c5f2-46bc-9f05-a082d292b832 ====================
+13:55:57.353665 [info ]: Started loading project
+13:55:57.354484 [info ]: Loading profiles.yml
+13:55:57.393713 [info ]: Cached model count updated: 7 models (estimate)
+13:55:57.393743 [info ]: Cached model count updated: 7 models (accurate)
+13:55:57.393777 [info ]: Started scheduling
+13:55:57.393868 [info ]: Finished scheduling [  0.00s]
+13:55:57.393884 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+13:55:57.395186 [info ]: Started building task graph
+13:55:57.395268 [info ]: Finished building task graph [  0.00s]
+13:55:57.398440 [info ]: Started rendering (7 nodes)
+13:55:57.398472 [info ]: Started model raw.stg_customers
+13:55:57.398485 [debug]: Started rendering model raw.stg_customers
+13:55:57.398516 [info ]: Started model raw.sales_daily
+13:55:57.398530 [debug]: Started rendering model raw.sales_daily
+13:55:57.398545 [info ]: Started model raw.sales_by_category
+13:55:57.398553 [debug]: Started rendering model raw.sales_by_category
+13:55:57.398551 [info ]: Finished loading project [  0.04s]
+13:55:57.398568 [info ]: Started model raw.stg_products
+13:55:57.398581 [debug]: Started rendering model raw.stg_products
+13:55:57.398600 [info ]: Started model raw.fct_orders
+13:55:57.398613 [debug]: Started rendering model raw.fct_orders
+13:55:57.398627 [info ]: Started model raw.stg_orders
+13:55:57.398638 [debug]: Started rendering model raw.stg_orders
+13:55:57.398654 [info ]: Started model raw.stg_order_items
+13:55:57.398666 [debug]: Started rendering model raw.stg_order_items
+13:55:57.399050 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+13:55:57.399145 [debug]: Finished rendering [  0.00s] model raw.stg_customers [success]
+13:55:57.399174 [info ]:  Succeeded [-------] model raw.stg_customers (view)
+13:55:57.403238 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+13:55:57.403293 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+13:55:57.403366 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+13:55:57.403551 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+13:55:57.403862 [debug]: Finished rendering [  0.01s] model raw.stg_orders [success]
+13:55:57.403898 [info ]:  Succeeded [  0.01s] model raw.stg_orders (view)
+13:55:57.403994 [debug]: Finished rendering [  0.01s] model raw.sales_daily [success]
+13:55:57.404026 [info ]:  Succeeded [  0.01s] model raw.sales_daily (table)
+13:55:57.404218 [debug]: Finished rendering [  0.01s] model raw.stg_products [success]
+13:55:57.404237 [info ]:  Succeeded [  0.01s] model raw.stg_products (view)
+13:55:57.404344 [debug]: Finished rendering [  0.01s] model raw.sales_by_category [success]
+13:55:57.404359 [info ]:  Succeeded [  0.01s] model raw.sales_by_category (table)
+13:55:57.404526 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+13:55:57.404871 [debug]: Finished rendering [  0.01s] model raw.stg_order_items [success]
+13:55:57.404902 [info ]:  Succeeded [  0.01s] model raw.stg_order_items (view)
+13:55:57.405359 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+13:55:57.405579 [debug]: Finished rendering [  0.01s] model raw.fct_orders [success]
+13:55:57.405607 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+13:55:57.405619 [info ]:  Succeeded [  0.01s] model raw.fct_orders (table)
+13:55:57.412279 [info ]: Started scheduling
+13:55:57.412349 [info ]: Finished scheduling [  0.00s]
+13:55:57.412409 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [58ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+13:55:57.412508 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T18:05:59.608832Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-09-04T18:05:59.618370Z | 5d688c1c-8ac8-430e-8ea0-0c3ff3e32e3e ====================
+18:05:59.618910 [info ]: Starting dbt LSP server
+18:05:59.619855 [info ]: Connecting to LSP client on port 8000
+18:05:59.623138 [info ]: Successfully connected to LSP client
+18:05:59.623863 [info ]: Creating LSP service...
+18:05:59.633953 [info ]: Creating LSP server...
+18:05:59.634003 [info ]: Starting LSP server...
+18:21:22.597252 [info ]: Loading profiles.yml
+==================== 2026-09-04T18:21:22.733269Z | 0bf0554a-3253-4134-910f-bc817ba66f43 ====================
+18:21:22.736238 [info ]: Started loading project
+18:21:22.749669 [info ]: Loading profiles.yml
+18:21:22.789591 [debug]:    Started loading packages
+18:21:22.805455 [debug]:     Loaded [  0.02s] packages
+18:21:22.822171 [info ]: Finished loading project [  0.09s]
+18:21:22.832896 [info ]: Started parsing
+18:21:22.983432 [debug]: Finished parsing models/staging/schema.yml [  0.01s]
+18:21:22.985652 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+18:21:23.034454 [debug]: Finished parsing models/marts/fct_orders.sql [  0.03s]
+18:21:23.035786 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+18:21:23.037179 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+18:21:23.039131 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+18:21:23.040196 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+18:21:23.041228 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+18:21:23.042957 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+18:21:23.318984 [info ]: Finished parsing [  0.49s]
+18:21:23.323432 [info ]: Cached model count updated: 7 models (estimate)
+18:21:23.323457 [info ]: Cached model count updated: 7 models (accurate)
+18:21:23.325350 [info ]: Started scheduling
+18:21:23.330395 [info ]: Finished scheduling [  0.01s]
+18:21:23.330956 [debug]: Compilation - 0 nodes selected: {}
+18:21:23.332074 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+18:21:23.333110 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+18:21:23.333681 [info ]: Started scheduling
+18:21:23.335923 [info ]: Finished scheduling [  0.00s]
+18:21:23.340925 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "products" }) and interval: None
+18:21:23.341400 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "customers" }) and interval: None
+18:21:23.341412 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "order_items" }) and interval: None
+18:21:23.341419 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "orders" }) and interval: None
+18:21:23.363785 [info ]: Started building task graph
+18:21:23.365806 [info ]: Finished building task graph [  0.00s]
+18:21:23.426062 [info ]: Started scheduling
+18:21:23.426114 [info ]: Finished scheduling [  0.00s]
+18:21:23.426841 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [693ms]
+18:21:23.427241 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-04T18:21:24.979965Z | 0fd965d3-42d5-4f1d-a25a-0be99aa8684a ====================
+18:21:24.980109 [info ]: Started loading project
+18:21:24.981117 [info ]: Loading profiles.yml
+18:21:25.027576 [info ]: Cached model count updated: 7 models (estimate)
+18:21:25.027609 [info ]: Cached model count updated: 7 models (accurate)
+18:21:25.027655 [info ]: Started scheduling
+18:21:25.027783 [info ]: Finished scheduling [  0.00s]
+18:21:25.027811 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+18:21:25.033339 [info ]: Started building task graph
+18:21:25.034843 [info ]: Finished building task graph [  0.00s]
+18:21:25.040635 [info ]: Started rendering (7 nodes)
+18:21:25.041560 [info ]: Started model raw.stg_customers
+18:21:25.042032 [debug]: Started rendering model raw.stg_customers
+18:21:25.042948 [info ]: Finished loading project [  0.06s]
+18:21:25.042943 [info ]: Started model raw.sales_daily
+18:21:25.042976 [debug]: Started rendering model raw.sales_daily
+18:21:25.043001 [info ]: Started model raw.sales_by_category
+18:21:25.043016 [debug]: Started rendering model raw.sales_by_category
+18:21:25.043053 [info ]: Started model raw.stg_products
+18:21:25.043099 [debug]: Started rendering model raw.stg_products
+18:21:25.043394 [info ]: Started model raw.fct_orders
+18:21:25.043424 [debug]: Started rendering model raw.fct_orders
+18:21:25.043460 [info ]: Started model raw.stg_orders
+18:21:25.043470 [debug]: Started rendering model raw.stg_orders
+18:21:25.043803 [info ]: Started model raw.stg_order_items
+18:21:25.043830 [debug]: Started rendering model raw.stg_order_items
+18:21:25.058989 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+18:21:25.058988 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+18:21:25.058988 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+18:21:25.059114 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+18:21:25.058988 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+18:21:25.060005 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+18:21:25.060431 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+18:21:25.062148 [debug]: Finished rendering [  0.02s] model raw.stg_order_items [success]
+18:21:25.062206 [info ]:  Succeeded [  0.02s] model raw.stg_order_items (view)
+18:21:25.062270 [debug]: Finished rendering [  0.02s] model raw.stg_customers [success]
+18:21:25.062289 [info ]:  Succeeded [  0.02s] model raw.stg_customers (view)
+18:21:25.062315 [debug]: Finished rendering [  0.02s] model raw.stg_orders [success]
+18:21:25.062331 [info ]:  Succeeded [  0.02s] model raw.stg_orders (view)
+18:21:25.062358 [debug]: Finished rendering [  0.02s] model raw.sales_by_category [success]
+18:21:25.062373 [info ]:  Succeeded [  0.02s] model raw.sales_by_category (table)
+18:21:25.062395 [debug]: Finished rendering [  0.02s] model raw.fct_orders [success]
+18:21:25.062404 [info ]:  Succeeded [  0.02s] model raw.fct_orders (table)
+18:21:25.062420 [debug]: Finished rendering [  0.02s] model raw.sales_daily [success]
+18:21:25.062430 [info ]:  Succeeded [  0.02s] model raw.sales_daily (table)
+18:21:25.062453 [debug]: Finished rendering [  0.02s] model raw.stg_products [success]
+18:21:25.062463 [info ]: Finished rendering [  0.02s] (7 nodes, 0 skipped, 0 errors)
+18:21:25.062472 [info ]:  Succeeded [  0.02s] model raw.stg_products (view)
+18:21:25.070677 [info ]: Started scheduling
+18:21:25.070762 [info ]: Finished scheduling [  0.00s]
+18:21:25.070857 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [90ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+18:21:25.071691 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-06T17:18:47.484146Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-09-06T17:18:47.503499Z | 2b2984b1-a67b-4cf0-8fb6-6eca95bb2cb7 ====================
+17:18:47.504130 [info ]: Starting dbt LSP server
+17:18:47.504775 [info ]: Connecting to LSP client on port 8000
+17:18:47.511574 [info ]: Successfully connected to LSP client
+17:18:47.511980 [info ]: Creating LSP service...
+17:18:47.518533 [info ]: Creating LSP server...
+17:18:47.518559 [info ]: Starting LSP server...
+17:18:47.608602 [info ]: Loading profiles.yml
+==================== 2026-09-06T17:18:47.721078Z | 37551f6b-48d4-48c7-91ee-3b6567b7443b ====================
+17:18:47.723385 [info ]: Started loading project
+17:18:47.734921 [info ]: Loading profiles.yml
+17:18:47.771227 [debug]:    Started loading packages
+17:18:47.783757 [debug]:     Loaded [  0.01s] packages
+17:18:47.795233 [info ]: Finished loading project [  0.07s]
+17:18:47.800475 [info ]: Started parsing
+17:18:47.910498 [debug]: Finished parsing models/staging/schema.yml [  0.02s]
+17:18:47.920232 [debug]: Finished parsing models/staging/sources.yml [  0.01s]
+17:18:47.963250 [debug]: Finished parsing models/marts/fct_orders.sql [  0.03s]
+17:18:47.972744 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.01s]
+17:18:47.981613 [debug]: Finished parsing models/marts/sales_daily.sql [  0.01s]
+17:18:47.997455 [debug]: Finished parsing models/staging/stg_customers.sql [  0.02s]
+17:18:48.005107 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.01s]
+17:18:48.013118 [debug]: Finished parsing models/staging/stg_orders.sql [  0.01s]
+17:18:48.026213 [debug]: Finished parsing models/staging/stg_products.sql [  0.01s]
+17:18:48.296834 [info ]: Finished parsing [  0.50s]
+17:18:48.301034 [info ]: Cached model count updated: 7 models (estimate)
+17:18:48.301058 [info ]: Cached model count updated: 7 models (accurate)
+17:18:48.303135 [info ]: Started scheduling
+17:18:48.308009 [info ]: Finished scheduling [  0.00s]
+17:18:48.308355 [debug]: Compilation - 0 nodes selected: {}
+17:18:48.309486 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+17:18:48.310089 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+17:18:48.310632 [info ]: Started scheduling
+17:18:48.312433 [info ]: Finished scheduling [  0.00s]
+17:18:48.317372 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "customers" }) and interval: None
+17:18:48.317745 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "products" }) and interval: None
+17:18:48.317751 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "order_items" }) and interval: None
+17:18:48.317755 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "orders" }) and interval: None
+17:18:48.338461 [info ]: Started building task graph
+17:18:48.340484 [info ]: Finished building task graph [  0.00s]
+17:18:48.399444 [info ]: Started scheduling
+17:18:48.399527 [info ]: Finished scheduling [  0.00s]
+17:18:48.400748 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [679ms]
+17:18:48.400898 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-06T17:18:49.945842Z | ae9010af-0c3c-4e6f-910f-63058edb8e8e ====================
+17:18:49.945908 [info ]: Started loading project
+17:18:49.946690 [info ]: Loading profiles.yml
+17:18:49.992674 [info ]: Cached model count updated: 7 models (estimate)
+17:18:49.992709 [info ]: Cached model count updated: 7 models (accurate)
+17:18:49.992753 [info ]: Started scheduling
+17:18:49.992847 [info ]: Finished scheduling [  0.00s]
+17:18:49.992880 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+17:18:50.000667 [info ]: Started building task graph
+17:18:50.001810 [info ]: Finished building task graph [  0.00s]
+17:18:50.007240 [info ]: Started rendering (7 nodes)
+17:18:50.008326 [info ]: Started model raw.stg_customers
+17:18:50.009061 [debug]: Started rendering model raw.stg_customers
+17:18:50.009898 [info ]: Finished loading project [  0.06s]
+17:18:50.009894 [info ]: Started model raw.sales_daily
+17:18:50.009920 [debug]: Started rendering model raw.sales_daily
+17:18:50.009952 [info ]: Started model raw.sales_by_category
+17:18:50.009974 [debug]: Started rendering model raw.sales_by_category
+17:18:50.009995 [info ]: Started model raw.stg_products
+17:18:50.010009 [debug]: Started rendering model raw.stg_products
+17:18:50.010031 [info ]: Started model raw.fct_orders
+17:18:50.010045 [debug]: Started rendering model raw.fct_orders
+17:18:50.010346 [info ]: Started model raw.stg_orders
+17:18:50.010367 [debug]: Started rendering model raw.stg_orders
+17:18:50.010391 [info ]: Started model raw.stg_order_items
+17:18:50.010404 [debug]: Started rendering model raw.stg_order_items
+17:18:50.025357 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+17:18:50.028888 [debug]: Finished rendering [  0.02s] model raw.sales_daily [success]
+17:18:50.028977 [info ]:  Succeeded [  0.02s] model raw.sales_daily (table)
+17:18:50.029541 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+17:18:50.029828 [debug]: Finished rendering [  0.02s] model raw.stg_orders [success]
+17:18:50.029858 [info ]:  Succeeded [  0.02s] model raw.stg_orders (view)
+17:18:50.030682 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+17:18:50.031125 [debug]: Finished rendering [  0.02s] model raw.stg_products [success]
+17:18:50.031158 [info ]:  Succeeded [  0.02s] model raw.stg_products (view)
+17:18:50.033143 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+17:18:50.033500 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+17:18:50.033698 [debug]: Finished rendering [  0.02s] model raw.stg_customers [success]
+17:18:50.033729 [info ]:  Succeeded [  0.02s] model raw.stg_customers (view)
+17:18:50.033780 [debug]: Finished rendering [  0.02s] model raw.stg_order_items [success]
+17:18:50.033792 [info ]:  Succeeded [  0.02s] model raw.stg_order_items (view)
+17:18:50.033849 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+17:18:50.033979 [debug]: Finished rendering [  0.02s] model raw.fct_orders [success]
+17:18:50.033997 [info ]:  Succeeded [  0.02s] model raw.fct_orders (table)
+17:18:50.034347 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+17:18:50.034730 [debug]: Finished rendering [  0.02s] model raw.sales_by_category [success]
+17:18:50.034764 [info ]: Finished rendering [  0.03s] (7 nodes, 0 skipped, 0 errors)
+17:18:50.034781 [info ]:  Succeeded [  0.02s] model raw.sales_by_category (table)
+17:18:50.045986 [info ]: Started scheduling
+17:18:50.046074 [info ]: Finished scheduling [  0.00s]
+17:18:50.046170 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [100ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+17:18:50.047058 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-06T17:20:40.432868Z | 3a30d5a9-f29d-4c88-b629-b34391e802bc ====================
+17:20:40.432948 [info ]: Started loading project
+17:20:40.433562 [info ]: Loading profiles.yml
+==================== 2026-09-06T17:20:40.441104Z | c551cbb9-a19d-4c19-bad3-9abb88be385b ====================
+17:20:40.441146 [info ]: Started loading project
+17:20:40.441645 [info ]: Loading profiles.yml
+17:20:40.441694 [info ]: Finished loading project [  0.01s]
+17:20:40.447089 [debug]:    Started loading packages
+17:20:40.450305 [debug]:     Loaded [  0.00s] packages
+17:20:40.451185 [info ]: Finished loading project [  0.01s]
+17:20:40.451385 [info ]: Started parsing
+17:20:40.488477 [debug]: Finished parsing models/staging/schema.yml [  0.00s]
+17:20:40.488870 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+17:20:40.490850 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+17:20:40.491509 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+17:20:40.492102 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+17:20:40.492661 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+17:20:40.493262 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+17:20:40.494276 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+17:20:40.495084 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+17:20:40.666982 [info ]: Finished parsing [  0.22s]
+17:20:40.667814 [info ]: Cached model count updated: 7 models (estimate)
+17:20:40.667831 [info ]: Cached model count updated: 7 models (accurate)
+17:20:40.667858 [info ]: Started scheduling
+17:20:40.667899 [info ]: Finished scheduling [  0.00s]
+17:20:40.667912 [debug]: Compilation - 0 nodes selected: {}
+17:20:40.667926 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+17:20:40.667940 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+17:20:40.667948 [info ]: Started scheduling
+17:20:40.668023 [info ]: Finished scheduling [  0.00s]
+17:20:40.668128 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "customers" }) and interval: None
+17:20:40.668140 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "order_items" }) and interval: None
+17:20:40.668143 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "products" }) and interval: None
+17:20:40.668148 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "orders" }) and interval: None
+17:20:40.669688 [info ]: Started building task graph
+17:20:40.669720 [info ]: Finished building task graph [  0.00s]
+17:20:40.676894 [info ]: Started scheduling
+17:20:40.676954 [info ]: Finished scheduling [  0.00s]
+17:20:40.677068 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [235ms]
+17:20:40.677119 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [244ms]
+17:20:40.682089 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-06T17:20:42.240466Z | bba81d4f-c499-4d26-982f-72c225e5f9bb ====================
+17:20:42.240572 [info ]: Started loading project
+17:20:42.241501 [info ]: Loading profiles.yml
+17:20:42.274694 [info ]: Cached model count updated: 7 models (estimate)
+17:20:42.274717 [info ]: Cached model count updated: 7 models (accurate)
+17:20:42.274757 [info ]: Started scheduling
+17:20:42.274851 [info ]: Finished scheduling [  0.00s]
+17:20:42.274872 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+17:20:42.276064 [info ]: Started building task graph
+17:20:42.276120 [info ]: Finished building task graph [  0.00s]
+17:20:42.278771 [info ]: Started rendering (7 nodes)
+17:20:42.278801 [info ]: Started model raw_staging.stg_customers
+17:20:42.278810 [debug]: Started rendering model raw_staging.stg_customers
+17:20:42.278844 [info ]: Started model raw_analytics.sales_daily
+17:20:42.278853 [debug]: Started rendering model raw_analytics.sales_daily
+17:20:42.278869 [info ]: Started model raw_analytics.sales_by_category
+17:20:42.278879 [info ]: Finished loading project [  0.04s]
+17:20:42.278883 [debug]: Started rendering model raw_analytics.sales_by_category
+17:20:42.278897 [info ]: Started model raw_staging.stg_products
+17:20:42.278929 [debug]: Started rendering model raw_staging.stg_products
+17:20:42.278959 [info ]: Started model raw_analytics.fct_orders
+17:20:42.278974 [debug]: Started rendering model raw_analytics.fct_orders
+17:20:42.278992 [info ]: Started model raw_staging.stg_orders
+17:20:42.279020 [debug]: Started rendering model raw_staging.stg_orders
+17:20:42.279066 [info ]: Started model raw_staging.stg_order_items
+17:20:42.279087 [debug]: Started rendering model raw_staging.stg_order_items
+17:20:42.281708 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+17:20:42.281746 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+17:20:42.282170 [debug]: Finished rendering [  0.00s] model raw_analytics.fct_orders [success]
+17:20:42.282204 [info ]:  Succeeded [  0.00s] model raw_analytics.fct_orders (table)
+17:20:42.282251 [debug]: Finished rendering [  0.00s] model raw_staging.stg_customers [success]
+17:20:42.282267 [info ]:  Succeeded [  0.00s] model raw_staging.stg_customers (view)
+17:20:42.282434 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+17:20:42.283237 [debug]: Finished rendering [  0.00s] model raw_staging.stg_order_items [success]
+17:20:42.283284 [info ]:  Succeeded [  0.00s] model raw_staging.stg_order_items (view)
+17:20:42.284201 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+17:20:42.286032 [debug]: Finished rendering [  0.01s] model raw_analytics.sales_daily [success]
+17:20:42.286082 [info ]:  Succeeded [  0.01s] model raw_analytics.sales_daily (table)
+17:20:42.288291 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+17:20:42.288689 [debug]: Finished rendering [  0.01s] model raw_analytics.sales_by_category [success]
+17:20:42.288728 [info ]:  Succeeded [  0.01s] model raw_analytics.sales_by_category (table)
+17:20:42.288885 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+17:20:42.289246 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+17:20:42.289437 [debug]: Finished rendering [  0.01s] model raw_staging.stg_products [success]
+17:20:42.289473 [info ]:  Succeeded [  0.01s] model raw_staging.stg_products (view)
+17:20:42.289508 [debug]: Finished rendering [  0.01s] model raw_staging.stg_orders [success]
+17:20:42.289521 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+17:20:42.289531 [info ]:  Succeeded [  0.01s] model raw_staging.stg_orders (view)
+17:20:42.299161 [info ]: Started scheduling
+17:20:42.299255 [info ]: Finished scheduling [  0.00s]
+17:20:42.299341 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [58ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+17:20:42.300033 [info ]: Cached model count updated: 7 models (accurate)
+17:20:42.624627 [info ]: Loading profiles.yml
+==================== 2026-09-06T17:21:20.388982Z | f51237a4-f1fc-4773-ae33-48f0eba56632 ====================
+17:21:20.389110 [info ]: Started loading project
+17:21:20.389757 [info ]: Loading profiles.yml
+==================== 2026-09-06T17:21:20.397273Z | ddf46429-22f4-462a-a191-c20c13dd4e57 ====================
+17:21:20.397335 [info ]: Started loading project
+17:21:20.397921 [info ]: Loading profiles.yml
+17:21:20.398002 [info ]: Finished loading project [  0.01s]
+17:21:20.403821 [debug]:    Started loading packages
+17:21:20.407320 [debug]:     Loaded [  0.00s] packages
+17:21:20.408099 [info ]: Finished loading project [  0.01s]
+17:21:20.408292 [info ]: Started parsing
+17:21:20.444668 [debug]: Finished parsing models/staging/schema.yml [  0.00s]
+17:21:20.445001 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+17:21:20.447633 [debug]: Finished parsing models/marts/fct_orders.sql [  0.00s]
+17:21:20.448690 [debug]: Finished parsing models/marts/sales_by_category.sql [  0.00s]
+17:21:20.449562 [debug]: Finished parsing models/marts/sales_daily.sql [  0.00s]
+17:21:20.450264 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+17:21:20.450882 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+17:21:20.451554 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+17:21:20.452155 [debug]: Finished parsing models/staging/stg_products.sql [  0.00s]
+17:21:20.603879 [info ]: Finished parsing [  0.20s]
+17:21:20.604735 [info ]: Cached model count updated: 7 models (estimate)
+17:21:20.604752 [info ]: Cached model count updated: 7 models (accurate)
+17:21:20.604779 [info ]: Started scheduling
+17:21:20.604813 [info ]: Finished scheduling [  0.00s]
+17:21:20.604826 [debug]: Compilation - 0 nodes selected: {}
+17:21:20.604840 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+17:21:20.604852 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+17:21:20.604859 [info ]: Started scheduling
+17:21:20.604927 [info ]: Finished scheduling [  0.00s]
+17:21:20.605030 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "order_items" }) and interval: None
+17:21:20.605040 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "products" }) and interval: None
+17:21:20.605044 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "customers" }) and interval: None
+17:21:20.605048 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "", schema: "raw", table: "orders" }) and interval: None
+17:21:20.606199 [info ]: Started building task graph
+17:21:20.606220 [info ]: Finished building task graph [  0.00s]
+17:21:20.612594 [info ]: Started scheduling
+17:21:20.612646 [info ]: Finished scheduling [  0.00s]
+17:21:20.612760 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [215ms]
+17:21:20.612812 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [223ms]
+17:21:20.615248 [info ]: Cached model count updated: 7 models (accurate)
+==================== 2026-09-06T17:21:22.159639Z | 35ba32dc-8d5e-4973-b342-6872436324bf ====================
+17:21:22.159763 [info ]: Started loading project
+17:21:22.160912 [info ]: Loading profiles.yml
+17:21:22.203689 [info ]: Cached model count updated: 7 models (estimate)
+17:21:22.203713 [info ]: Cached model count updated: 7 models (accurate)
+17:21:22.203754 [info ]: Started scheduling
+17:21:22.203885 [info ]: Finished scheduling [  0.00s]
+17:21:22.203910 [debug]: Compilation - 7 nodes selected: {"model.analytics.fct_orders", "model.analytics.sales_by_category", "model.analytics.sales_daily", "model.analytics.stg_customers", "model.analytics.stg_order_items", "model.analytics.stg_orders", "model.analytics.stg_products"}
+17:21:22.205739 [info ]: Started building task graph
+17:21:22.205825 [info ]: Finished building task graph [  0.00s]
+17:21:22.210033 [info ]: Started rendering (7 nodes)
+17:21:22.210076 [info ]: Started model raw_staging.stg_customers
+17:21:22.210093 [debug]: Started rendering model raw_staging.stg_customers
+17:21:22.210165 [info ]: Started model raw_analytics.sales_daily
+17:21:22.210181 [debug]: Started rendering model raw_analytics.sales_daily
+17:21:22.210197 [info ]: Started model raw_analytics.sales_by_category
+17:21:22.210201 [info ]: Finished loading project [  0.05s]
+17:21:22.210211 [debug]: Started rendering model raw_analytics.sales_by_category
+17:21:22.210304 [info ]: Started model raw_staging.stg_products
+17:21:22.210375 [debug]: Started rendering model raw_staging.stg_products
+17:21:22.210417 [info ]: Started model raw_analytics.fct_orders
+17:21:22.210435 [debug]: Started rendering model raw_analytics.fct_orders
+17:21:22.210470 [info ]: Started model raw_staging.stg_orders
+17:21:22.210486 [debug]: Started rendering model raw_staging.stg_orders
+17:21:22.210506 [info ]: Started model raw_staging.stg_order_items
+17:21:22.210520 [debug]: Started rendering model raw_staging.stg_order_items
+17:21:22.213537 [debug]: Compiled SQL for node model.analytics.stg_customers at target\.lsp\compiled\analytics\models\staging\stg_customers.sql
+17:21:22.214927 [debug]: Finished rendering [  0.00s] model raw_staging.stg_customers [success]
+17:21:22.214974 [info ]:  Succeeded [  0.00s] model raw_staging.stg_customers (view)
+17:21:22.216125 [debug]: Compiled SQL for node model.analytics.sales_daily at target\.lsp\compiled\analytics\models\marts\sales_daily.sql
+17:21:22.216282 [debug]: Compiled SQL for node model.analytics.sales_by_category at target\.lsp\compiled\analytics\models\marts\sales_by_category.sql
+17:21:22.216425 [debug]: Finished rendering [  0.01s] model raw_analytics.sales_daily [success]
+17:21:22.216462 [info ]:  Succeeded [  0.01s] model raw_analytics.sales_daily (table)
+17:21:22.216613 [debug]: Finished rendering [  0.01s] model raw_analytics.sales_by_category [success]
+17:21:22.216638 [info ]:  Succeeded [  0.01s] model raw_analytics.sales_by_category (table)
+17:21:22.216933 [debug]: Compiled SQL for node model.analytics.fct_orders at target\.lsp\compiled\analytics\models\marts\fct_orders.sql
+17:21:22.217243 [debug]: Finished rendering [  0.01s] model raw_analytics.fct_orders [success]
+17:21:22.217282 [info ]:  Succeeded [  0.01s] model raw_analytics.fct_orders (table)
+17:21:22.218253 [debug]: Compiled SQL for node model.analytics.stg_orders at target\.lsp\compiled\analytics\models\staging\stg_orders.sql
+17:21:22.218870 [debug]: Compiled SQL for node model.analytics.stg_order_items at target\.lsp\compiled\analytics\models\staging\stg_order_items.sql
+17:21:22.218892 [debug]: Finished rendering [  0.01s] model raw_staging.stg_orders [success]
+17:21:22.218923 [info ]:  Succeeded [  0.01s] model raw_staging.stg_orders (view)
+17:21:22.219065 [debug]: Finished rendering [  0.01s] model raw_staging.stg_order_items [success]
+17:21:22.219086 [info ]:  Succeeded [  0.01s] model raw_staging.stg_order_items (view)
+17:21:22.219442 [debug]: Compiled SQL for node model.analytics.stg_products at target\.lsp\compiled\analytics\models\staging\stg_products.sql
+17:21:22.219759 [debug]: Finished rendering [  0.01s] model raw_staging.stg_products [success]
+17:21:22.219791 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+17:21:22.219804 [info ]:  Succeeded [  0.01s] model raw_staging.stg_products (view)
+17:21:22.230935 [info ]: Started scheduling
+17:21:22.231018 [info ]: Finished scheduling [  0.00s]
+17:21:22.231094 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [71ms]
+Processed: 7 models
+Summary: 7 total | 7 success
+17:21:22.231214 [info ]: Cached model count updated: 7 models (accurate)
+17:21:22.562928 [info ]: Loading profiles.yml
